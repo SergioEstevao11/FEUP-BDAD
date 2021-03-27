@@ -36,8 +36,8 @@ CREATE TABLE Servico(
 );
 
 CREATE TABLE Assinatura(
-    nif TEXT REFERENCES Cliente,
-    nomeServico TEXT REFERENCES Servico,
+    nif TEXT REFERENCES Cliente ON DELETE CASCADE ON UPDATE CASCADE,
+    nomeServico TEXT REFERENCES Servico ON DELETE CASCADE ON UPDATE CASCADE,
     IDPasse INTEGER CHECK(IDPasse > 0),
     PRIMARY KEY(nif, nomeServico),
     UNIQUE(nomeServico, IDPasse)
@@ -53,13 +53,13 @@ CREATE TABLE Estacao(
 CREATE TABLE Rota(
     id INTEGER PRIMARY KEY,
     titulo TEXT,
-    nomeServico TEXT REFERENCES Servico,
+    nomeServico TEXT REFERENCES Servico ON DELETE CASCADE ON UPDATE CASCADE,
     CHECK(titulo NOT GLOB '*[^a-zA-Z ]*')
 );
 
 CREATE TABLE Informacao(
-    morada TEXT REFERENCES Estacao,
-    idRota INTEGER REFERENCES Rota,
+    morada TEXT REFERENCES Estacao ON DELETE CASCADE ON UPDATE CASCADE,
+    idRota INTEGER REFERENCES Rota ON DELETE CASCADE ON UPDATE CASCADE,
     tempoDeChegada INTEGER CHECK(tempoDeChegada >= 0)
 );
 
@@ -76,7 +76,7 @@ CREATE TABLE Trabalhador(
 );
 
 CREATE TABLE Maquinista(
-    nifMaquinista TEXT REFERENCES Trabalhador(nif),
+    nifMaquinista TEXT REFERENCES Trabalhador(nif) ON DELETE CASCADE ON UPDATE CASCADE,
     numLicensa TEXT,
     PRIMARY KEY(nifMaquinista),
     CHECK(LENGTH(numLicensa) == 12),
@@ -84,7 +84,7 @@ CREATE TABLE Maquinista(
 );
 
 CREATE TABLE Revisor(
-    nifRevisor TEXT REFERENCES Trabalhador(nif),
+    nifRevisor TEXT REFERENCES Trabalhador(nif) ON DELETE CASCADE ON UPDATE CASCADE,
     identificacao TEXT,
     PRIMARY KEY(nifRevisor),
     CHECK(LENGTH(identificacao) == 9),
@@ -92,8 +92,8 @@ CREATE TABLE Revisor(
 );
 
 CREATE TABLE Bilheteiro(
-    nifBilheteiro TEXT REFERENCES Trabalhador(nif),
-    morada TEXT REFERENCES Estacao,
+    nifBilheteiro TEXT REFERENCES Trabalhador(nif) ON DELETE CASCADE ON UPDATE CASCADE,
+    morada TEXT REFERENCES Estacao ON DELETE CASCADE ON UPDATE CASCADE,
     PRIMARY KEY(nifBilheteiro)
 );
 
@@ -113,13 +113,13 @@ CREATE TABLE Comboio2(
 );
 
 CREATE TABLE ComboioCarga(
-    id INTEGER REFERENCES Comboio1(id),
+    id INTEGER REFERENCES Comboio1(id) ON DELETE CASCADE ON UPDATE CASCADE,
     maxCarga INTEGER CHECK (maxCarga > 0)
 );
 
 CREATE TABLE ComboioPassageiros(
-    id INTEGER REFERENCES Comboio1(id),
-    maxCarga INTEGER CHECK (maxCarga > 0)
+    id INTEGER REFERENCES Comboio1(id) ON DELETE CASCADE ON UPDATE CASCADE,
+    lugares INTEGER CHECK (maxCarga > 0)
 );
 
 
@@ -127,39 +127,39 @@ CREATE TABLE Viagem1(
     id INTEGER PRIMARY KEY,
     data INTEGER,
     horaDePartida INTEGER,
-    idComboio INTEGER REFERENCES Comboio,
-    idRota INTEGER REFERENCES Rota,
-    nifMaquinista REFERENCES Maquinista
+    idComboio INTEGER REFERENCES Comboio ON DELETE CASCADE ON UPDATE CASCADE,
+    idRota INTEGER REFERENCES Rota ON DELETE CASCADE ON UPDATE CASCADE,
+    nifMaquinista REFERENCES Maquinista ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE Viagem2(
     horaDePartida INTEGER,
-    idRota INTEGER REFERENCES Rota,
+    idRota INTEGER REFERENCES Rota ON DELETE CASCADE ON UPDATE CASCADE,
     horaDeChegada INTEGER,
     CHECK(horaDeChegada > horaDePartida),
     PRIMARY KEY(horaDePartida, idRota)
 );
 
 CREATE TABLE RevisorViagem(
-    nifRevisor TEXT REFERENCES Revisor,
-    idViagem INTEGER REFERENCES Viagem,
+    nifRevisor TEXT REFERENCES Revisor ON DELETE CASCADE ON UPDATE CASCADE,
+    idViagem INTEGER REFERENCES Viagem ON DELETE CASCADE ON UPDATE CASCADE,
     PRIMARY KEY(nifRevisor, idViagem)
 );
 
 CREATE TABLE Bilhete1(
     id INTEGER PRIMARY KEY,
     lugarDestinado TEXT,
-    nifCliente REFERENCES Cliente,
-    moradaEstacaoPartida REFERENCES Estacao,
-    moradaEstacaoChegada REFERENCES Estacao,
-    idViagem REFERENCES Viagem,
-    nifBilheteiro REFERENCES Bilheteiro
+    nifCliente REFERENCES Cliente ON DELETE CASCADE ON UPDATE CASCADE,
+    moradaEstacaoPartida REFERENCES Estacao ON DELETE CASCADE ON UPDATE CASCADE,
+    moradaEstacaoChegada REFERENCES Estacao ON DELETE CASCADE ON UPDATE CASCADE,
+    idViagem REFERENCES Viagem ON DELETE CASCADE ON UPDATE CASCADE,
+    nifBilheteiro REFERENCES Bilheteiro ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE Bilhete2(
-    moradaEstacaoPartida REFERENCES Estacao,
-    moradaEstacaoChegada REFERENCES Estacao,
-    idViagem REFERENCES Viagem,
+    moradaEstacaoPartida REFERENCES Estacao ON DELETE CASCADE ON UPDATE CASCADE,
+    moradaEstacaoChegada REFERENCES Estacao ON DELETE CASCADE ON UPDATE CASCADE,
+    idViagem REFERENCES Viagem ON DELETE CASCADE ON UPDATE CASCADE,
     preco FLOAT CHECK(preco > 0),
     PRIMARY KEY(moradaEstacaoPartida, moradaEstacaoChegada,idViagem)
 );
