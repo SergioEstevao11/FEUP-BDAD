@@ -32,7 +32,11 @@ CREATE TABLE Cliente(
 );
 
 CREATE TABLE Servico(
-    nome TEXT PRIMARY KEY
+    nome TEXT PRIMARY KEY,
+    CHECK ((nome == "Alfa-Pendular" OR
+            nome == "InterCidades"  OR
+            nome == "Regional"      OR
+            nome == "Urbano"        ))
 );
 
 CREATE TABLE Assinatura(
@@ -45,8 +49,8 @@ CREATE TABLE Assinatura(
 
 CREATE TABLE Estacao(
     morada TEXT PRIMARY KEY,
-    codigoPostal TEXT,
-    localidade TEXT,
+    codigoPostal TEXT NOT NULL,
+    localidade TEXT NOT NULL,
     CHECK(localidade NOT GLOB '*[^a-zA-Z ]*')
 );
 
@@ -119,7 +123,7 @@ CREATE TABLE ComboioCarga(
 
 CREATE TABLE ComboioPassageiros(
     id INTEGER REFERENCES Comboio1(id) ON DELETE CASCADE ON UPDATE CASCADE,
-    lugares INTEGER CHECK (maxCarga > 0)
+    lugares INTEGER CHECK (lugares > 0)
 );
 
 
