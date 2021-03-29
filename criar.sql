@@ -25,16 +25,15 @@ DROP TABLE IF EXISTS Comboio2;
 
 CREATE TABLE Cliente(
     nif TEXT PRIMARY KEY,
-    nome TEXT,
+    nome TEXT NOT NULL,
     CHECK(LENGTH(nif) == 9),
-    CHECK(nif NOT GLOB '*[^0-9]*'),
-    CHECK(nome NOT GLOB '*[^a-zA-Z ]*')
+    CHECK(nif NOT GLOB '*[^0-9]*')
 );
 
 CREATE TABLE Servico(
     nome TEXT PRIMARY KEY,
     CHECK ((nome == "Alfa-Pendular" OR
-            nome == "InterCidades"  OR
+            nome == "Intercidades"  OR
             nome == "Regional"      OR
             nome == "Urbano"        ))
 );
@@ -48,21 +47,20 @@ CREATE TABLE Assinatura(
 );
 
 CREATE TABLE Estacao(
-    morada TEXT PRIMARY KEY,
+    nome TEXT PRIMARY KEY,
+    morada TEXT NOT NULL,
     codigoPostal TEXT NOT NULL,
-    localidade TEXT NOT NULL,
-    CHECK(localidade NOT GLOB '*[^a-zA-Z ]*')
+    localidade TEXT NOT NULL
 );
 
 CREATE TABLE Rota(
     id INTEGER PRIMARY KEY,
     titulo TEXT,
-    nomeServico TEXT REFERENCES Servico ON DELETE CASCADE ON UPDATE CASCADE,
-    CHECK(titulo NOT GLOB '*[^a-zA-Z ]*')
+    nomeServico TEXT REFERENCES Servico ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE Informacao(
-    morada TEXT REFERENCES Estacao ON DELETE CASCADE ON UPDATE CASCADE,
+    nomeEstacao TEXT REFERENCES Estacao ON DELETE CASCADE ON UPDATE CASCADE,
     idRota INTEGER REFERENCES Rota ON DELETE CASCADE ON UPDATE CASCADE,
     tempoDeChegada INTEGER CHECK(tempoDeChegada >= 0)
 );
@@ -74,7 +72,6 @@ CREATE TABLE Trabalhador(
     numTelefone TEXT,
     CHECK(LENGTH(nif) == 9),
     CHECK(nif NOT GLOB '*[^0-9]*'),
-    CHECK(nome NOT GLOB '*[^a-zA-Z ]*'),
     CHECK(LENGTH(numTelefone) == 9),
     CHECK(numTelefone NOT GLOB '*[^0-9]*')
 );
@@ -118,7 +115,7 @@ CREATE TABLE Comboio2(
 
 CREATE TABLE ComboioCarga(
     id INTEGER REFERENCES Comboio1(id) ON DELETE CASCADE ON UPDATE CASCADE,
-    maxCarga INTEGER CHECK (maxCarga > 0)
+    maxCarga INTEGER CHECK (maxCarga > 0 AND maxCarga < 5)
 );
 
 CREATE TABLE ComboioPassageiros(
@@ -154,8 +151,8 @@ CREATE TABLE Bilhete1(
     id INTEGER PRIMARY KEY,
     lugarDestinado TEXT NOT NULL,
     nifCliente REFERENCES Cliente ON DELETE CASCADE ON UPDATE CASCADE,
-    moradaEstacaoPartida REFERENCES Estacao ON DELETE CASCADE ON UPDATE CASCADE,
-    moradaEstacaoChegada REFERENCES Estacao ON DELETE CASCADE ON UPDATE CASCADE,
+    nomeEstacaoPartida REFERENCES Estacao ON DELETE CASCADE ON UPDATE CASCADE,
+    nomeEstacaoChegada REFERENCES Estacao ON DELETE CASCADE ON UPDATE CASCADE,
     idViagem REFERENCES Viagem ON DELETE CASCADE ON UPDATE CASCADE,
     nifBilheteiro REFERENCES Bilheteiro ON DELETE CASCADE ON UPDATE CASCADE
 );
