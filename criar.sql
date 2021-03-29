@@ -103,14 +103,14 @@ CREATE TABLE Bilheteiro(
 
 CREATE TABLE Comboio1(
     id INTEGER PRIMARY KEY,
-    marca TEXT,
-    modelo TEXT,
+    marca TEXT NOT NULL,
+    modelo TEXT NOT NULL,
     CHECK(marca NOT GLOB '*[^a-zA-Z ]*')
 );
 
 CREATE TABLE Comboio2(
-    marca TEXT,
-    modelo TEXT,
+    marca TEXT NOT NULL,
+    modelo TEXT NOT NULL,
     velMaxima INTEGER CHECK (velMaxima > 0),
     CHECK(marca NOT GLOB '*[^a-zA-Z ]*'),
     PRIMARY KEY(marca,modelo)
@@ -129,17 +129,17 @@ CREATE TABLE ComboioPassageiros(
 
 CREATE TABLE Viagem1(
     id INTEGER PRIMARY KEY,
-    data INTEGER,
-    horaDePartida INTEGER,
+    data INTEGER NOT NULL,
+    horaDePartida INTEGER NOT NULL,
     idComboio INTEGER REFERENCES Comboio ON DELETE CASCADE ON UPDATE CASCADE,
     idRota INTEGER REFERENCES Rota ON DELETE CASCADE ON UPDATE CASCADE,
     nifMaquinista REFERENCES Maquinista ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE Viagem2(
-    horaDePartida INTEGER,
+    horaDePartida INTEGER NOT NULL,
     idRota INTEGER REFERENCES Rota ON DELETE CASCADE ON UPDATE CASCADE,
-    horaDeChegada INTEGER,
+    horaDeChegada INTEGER NOT NULL,
     CHECK(horaDeChegada > horaDePartida),
     PRIMARY KEY(horaDePartida, idRota)
 );
@@ -152,7 +152,7 @@ CREATE TABLE RevisorViagem(
 
 CREATE TABLE Bilhete1(
     id INTEGER PRIMARY KEY,
-    lugarDestinado TEXT,
+    lugarDestinado TEXT NOT NULL,
     nifCliente REFERENCES Cliente ON DELETE CASCADE ON UPDATE CASCADE,
     moradaEstacaoPartida REFERENCES Estacao ON DELETE CASCADE ON UPDATE CASCADE,
     moradaEstacaoChegada REFERENCES Estacao ON DELETE CASCADE ON UPDATE CASCADE,
