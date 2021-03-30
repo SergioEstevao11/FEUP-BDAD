@@ -69,7 +69,7 @@ CREATE TABLE Estacao(
 );
 
 CREATE TABLE Rota(
-    id INTEGER PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
 
     titulo TEXT,
     
@@ -84,7 +84,9 @@ CREATE TABLE Informacao(
     idRota INTEGER REFERENCES Rota  ON DELETE CASCADE 
                                     ON UPDATE CASCADE,
 
-    tempoDeChegada INTEGER CHECK(tempoDeChegada >= 0)
+    tempoDeChegada INTEGER CHECK(tempoDeChegada >= 0),
+
+    PRIMARY KEY(nomeEstacao, idRota)
 );
 
 CREATE TABLE Trabalhador(

@@ -937,3 +937,435 @@ INSERT INTO ComboioPassageiros(
                                 12,
                                 188
                             );
+
+--Table: Rota
+INSERT INTO Rota(   
+                    titulo,
+                    nomeServico
+                )
+                VALUES(
+                    "Porto/Faro",
+                    "Alfa-Pendular"
+                );
+
+INSERT INTO Rota(   
+                    titulo,
+                    nomeServico
+                )
+                VALUES(
+                    "Lisboa/Porto",
+                    "Intercidades"
+                );
+
+INSERT INTO Rota(   
+                    titulo,
+                    nomeServico
+                )
+                VALUES(
+                    "Porto/Lisboa",
+                    "Intercidades"
+                );
+
+INSERT INTO Rota(   
+                    titulo,
+                    nomeServico
+                )
+                VALUES(
+                    "Coimbra/Aveiro",
+                    "Regional"
+                );
+
+INSERT INTO Rota(   
+                    titulo,
+                    nomeServico
+                )
+                VALUES(
+                    "Aveiro/Coimbra",
+                    "Regional"
+                );
+
+INSERT INTO Rota(   
+                    titulo,
+                    nomeServico
+                )
+                VALUES(
+                    NULL,
+                    "Urbano"
+                );
+
+
+--Table: Informacao
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Campanha",
+                    1,
+                    0
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Aveiro",
+                    1,
+                    49
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Coimbra-B",
+                    1,
+                    76
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Oriente",
+                    1,
+                    171
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Tunes",
+                    1,
+                    323
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Faro",
+                    1,
+                    351
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Oriente",
+                    2,
+                    0
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Pombal",
+                    2,
+                    83
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Coimbra-B",
+                    2,
+                    108
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Mealhada",
+                    2,
+                    121
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Aveiro",
+                    2,
+                    141
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Campanha",
+                    2,
+                    194
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Campanha",
+                    3,
+                    0
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Aveiro",
+                    3,
+                    55
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Mealhada",
+                    3,
+                    72
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Coimbra-B",
+                    3,
+                    87
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Pombal",
+                    3,
+                    112
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Oriente",
+                    3,
+                    195
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Coimbra",
+                    4,
+                    0
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Coimbra-B",
+                    4,
+                    4
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Pampilhosa",
+                    4,
+                    21
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Mealhada",
+                    4,
+                    25
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Oliveira do Bairro",
+                    4,
+                    43
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Aveiro",
+                    4,
+                    60
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Aveiro",
+                    5,
+                    0
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Oliveira do Bairro",
+                    5,
+                    17
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Mealhada",
+                    5,
+                    35
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Pampilhosa",
+                    5,
+                    39
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Coimbra-B",
+                    5,
+                    56
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Coimbra",
+                    5,
+                    60
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Coimbra",
+                    6,
+                    0
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Coimbra-B",
+                    6,
+                    9
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Formoselha",
+                    6,
+                    34
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    "Figueira da Foz",
+                    6,
+                    70
+                );
+
