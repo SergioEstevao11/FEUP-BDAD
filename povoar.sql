@@ -576,7 +576,7 @@ INSERT INTO Bilheteiro (
                     )
                     VALUES(
                         "139514911",
-                        "Porto-Campanhã"
+                        "Campanhã"
                     );
 
 INSERT INTO Bilheteiro (   
@@ -585,14 +585,14 @@ INSERT INTO Bilheteiro (
                     )
                     VALUES(
                         "956978340",
-                        "Lisboa-Oriente"
+                        "Oriente"
                     );
 
 
 --Table: Revisor
 INSERT INTO Revisor (   
                         nifRevisor,
-                        identificacao,
+                        identificacao
                     )
                     VALUES(
                         "706598544",
@@ -601,7 +601,7 @@ INSERT INTO Revisor (
 
 INSERT INTO Revisor (   
                         nifRevisor,
-                        identificacao,
+                        identificacao
                     )
                     VALUES(
                         "047417167",
@@ -610,7 +610,7 @@ INSERT INTO Revisor (
 
 INSERT INTO Revisor (   
                         nifRevisor,
-                        identificacao,
+                        identificacao
                     )
                     VALUES(
                         "092797409",
@@ -619,7 +619,7 @@ INSERT INTO Revisor (
 
 INSERT INTO Revisor (   
                         nifRevisor,
-                        identificacao,
+                        identificacao
                     )
                     VALUES(
                         "848547067",
@@ -628,7 +628,7 @@ INSERT INTO Revisor (
 
 INSERT INTO Revisor (   
                         nifRevisor,
-                        identificacao,
+                        identificacao
                     )
                     VALUES(
                         "601853725",
