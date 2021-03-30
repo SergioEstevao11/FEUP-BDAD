@@ -50,7 +50,8 @@ CREATE TABLE Estacao(
     nome TEXT PRIMARY KEY,
     morada TEXT NOT NULL,
     codigoPostal TEXT NOT NULL,
-    localidade TEXT NOT NULL
+    localidade TEXT NOT NULL,
+    UNIQUE(morada, codigoPostal)
 );
 
 CREATE TABLE Rota(
@@ -84,18 +85,18 @@ CREATE TABLE Maquinista(
     CHECK(numLicensa NOT GLOB '*[^0-9]*')
 );
 
+CREATE TABLE Bilheteiro(
+    nifBilheteiro TEXT REFERENCES Trabalhador(nif) ON DELETE CASCADE ON UPDATE CASCADE,
+    nomeEstacao TEXT REFERENCES Estacao ON DELETE CASCADE ON UPDATE CASCADE,
+    PRIMARY KEY(nifBilheteiro)
+);
+
 CREATE TABLE Revisor(
     nifRevisor TEXT REFERENCES Trabalhador(nif) ON DELETE CASCADE ON UPDATE CASCADE,
     identificacao TEXT,
     PRIMARY KEY(nifRevisor),
     CHECK(LENGTH(identificacao) == 9),
     CHECK(identificacao NOT GLOB '*[^0-9]*')
-);
-
-CREATE TABLE Bilheteiro(
-    nifBilheteiro TEXT REFERENCES Trabalhador(nif) ON DELETE CASCADE ON UPDATE CASCADE,
-    morada TEXT REFERENCES Estacao ON DELETE CASCADE ON UPDATE CASCADE,
-    PRIMARY KEY(nifBilheteiro)
 );
 
 CREATE TABLE Comboio1(
@@ -149,18 +150,37 @@ CREATE TABLE RevisorViagem(
 
 CREATE TABLE Bilhete1(
     id INTEGER PRIMARY KEY,
+
     lugarDestinado TEXT NOT NULL,
-    nifCliente REFERENCES Cliente ON DELETE CASCADE ON UPDATE CASCADE,
-    nomeEstacaoPartida REFERENCES Estacao ON DELETE CASCADE ON UPDATE CASCADE,
-    nomeEstacaoChegada REFERENCES Estacao ON DELETE CASCADE ON UPDATE CASCADE,
-    idViagem REFERENCES Viagem ON DELETE CASCADE ON UPDATE CASCADE,
-    nifBilheteiro REFERENCES Bilheteiro ON DELETE CASCADE ON UPDATE CASCADE
+
+    nifCliente REFERENCES Cliente   ON DELETE CASCADE 
+                                    ON UPDATE CASCADE,
+
+    nomeEstacaoPartida REFERENCES Estacao   ON DELETE CASCADE 
+                                            ON UPDATE CASCADE,
+
+    nomeEstacaoChegada REFERENCES Estacao    ON DELETE CASCADE 
+                                             ON UPDATE CASCADE,
+
+    idViagem REFERENCES Viagem  ON DELETE CASCADE 
+                                ON UPDATE CASCADE,
+
+    nifBilheteiro REFERENCES Bilheteiro ON DELETE CASCADE 
+                                        ON UPDATE CASCADE
 );
 
+
 CREATE TABLE Bilhete2(
-    moradaEstacaoPartida REFERENCES Estacao ON DELETE CASCADE ON UPDATE CASCADE,
-    moradaEstacaoChegada REFERENCES Estacao ON DELETE CASCADE ON UPDATE CASCADE,
-    idViagem REFERENCES Viagem ON DELETE CASCADE ON UPDATE CASCADE,
+    moradaEstacaoPartida REFERENCES Estacao ON DELETE CASCADE 
+                                            ON UPDATE CASCADE,
+
+    moradaEstacaoChegada REFERENCES Estacao ON DELETE CASCADE 
+                                            ON UPDATE CASCADE,
+
+    idViagem REFERENCES Viagem  ON DELETE CASCADE 
+                                ON UPDATE CASCADE,
+
     preco FLOAT CHECK(preco > 0),
+    
     PRIMARY KEY(moradaEstacaoPartida, moradaEstacaoChegada,idViagem)
 );
