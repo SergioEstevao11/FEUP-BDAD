@@ -45,7 +45,7 @@ INSERT INTO Cliente (
                     )
                     VALUES(
                         "766573459",
-                        "Clara Gonçalves da Costa"
+                        "Clara Goncalves da Costa"
                     );
 
 INSERT INTO Cliente (   
@@ -72,7 +72,7 @@ INSERT INTO Cliente (
                     )
                     VALUES(
                         "773734252",
-                        "Sérgio Miguel Rosa Estêvão"
+                        "Sergio Miguel Rosa Estevao"
                     );
 
 INSERT INTO Cliente (   
@@ -81,7 +81,7 @@ INSERT INTO Cliente (
                     )
                     VALUES(
                         "777374837",
-                        "Rogério Antunes Figueiredo"
+                        "Rogerio Antunes Figueiredo"
                     );
 
 INSERT INTO Cliente (   
@@ -90,7 +90,7 @@ INSERT INTO Cliente (
                     )
                     VALUES(
                         "156703269",
-                        "João Tiago Pereira Lopes"
+                        "Joao Tiago Pereira Lopes"
                     );
 
 INSERT INTO Cliente (   
@@ -198,7 +198,7 @@ INSERT INTO Cliente (
                     )
                     VALUES(
                         "689860351",
-                        "Maria do Céu Ferreira"
+                        "Maria do Ceu Ferreira"
                     );
 
 INSERT INTO Cliente (   
@@ -219,8 +219,8 @@ INSERT INTO Estacao (
                         localidade
                     )
                     VALUES(
-                        "Campanhã",
-                        "Largo da Estação",
+                        "Campanha",
+                        "Largo da Estacao",
                         "4300-173",
                         "Porto"
                     );
@@ -232,8 +232,8 @@ INSERT INTO Estacao (
                         localidade
                     )
                     VALUES(
-                        "São Bento",
-                        "Praça Almeida Garrett",
+                        "Sao Bento",
+                        "Praca Almeida Garrett",
                         "4000-069",
                         "Porto"
                     );
@@ -245,7 +245,7 @@ INSERT INTO Estacao (
                         localidade
                     )
                     VALUES(
-                        "Santa Apolónia",
+                        "Santa Apolonia",
                         "Av. Infante D. Henrique",
                         "1149-066",
                         "Lisboa"
@@ -259,7 +259,7 @@ INSERT INTO Estacao (
                     )
                     VALUES(
                         "Oriente",
-                        "Edifício Gare do Oriente, Piso 1 - Av. D. João II",
+                        "Edificio Gare do Oriente, Piso 1 - Av. D. Joao II",
                         "4000-069",
                         "Lisboa"
                     );
@@ -285,7 +285,7 @@ INSERT INTO Estacao (
                     )
                     VALUES(
                         "Coimbra-B",
-                        "Rua do Padrão - Eiras",
+                        "Rua do Padrao - Eiras",
                         "3025-045",
                         "Coimbra"
                     );
@@ -298,7 +298,7 @@ INSERT INTO Estacao (
                     )
                     VALUES(
                         "Figueira da Foz",
-                        "Largo da Estação",
+                        "Largo da Estacao",
                         "3080-021",
                         "Figueira da Foz"
                     );
@@ -311,7 +311,7 @@ INSERT INTO Estacao (
                     )
                     VALUES(
                         "Aveiro",
-                        "Largo da Estação dos Caminhos de Ferro",
+                        "Largo da Estacao dos Caminhos de Ferro",
                         "3800-179",
                         "Aveiro"
                     );
@@ -324,7 +324,7 @@ INSERT INTO Estacao (
                     )
                     VALUES(
                         "Pampilhosa",
-                        "Rua da Estação de Caminhos de Ferro",
+                        "Rua da Estacao de Caminhos de Ferro",
                         "3050-443",
                         "Pampilhosa"
                     );
@@ -337,7 +337,7 @@ INSERT INTO Estacao (
                     )
                     VALUES(
                         "Oliveira do Bairro",
-                        "Largo da Estação",
+                        "Largo da Estacao",
                         "3770-921",
                         "Oliveira do Bairro"
                     );
@@ -363,7 +363,7 @@ INSERT INTO Estacao (
                     )
                     VALUES(
                         "Formoselha",
-                        "Largo da Estação",
+                        "Largo da Estacao",
                         "3140-401",
                         "Formoselha"
                     );
@@ -389,7 +389,7 @@ INSERT INTO Estacao (
                     )
                     VALUES(
                         "Faro",
-                        "Largo da Estação dos Caminhos de Ferro",
+                        "Largo da Estacao dos Caminhos de Ferro",
                         "8000-133",
                         "Faro"
                     );
@@ -482,7 +482,7 @@ INSERT INTO Trabalhador (
                     )
                     VALUES(
                         "706598544",
-                        "Rúben André Ferreira",
+                        "Ruben Andre Ferreira",
                         23,
                         "227513482"
                     );
@@ -509,7 +509,7 @@ INSERT INTO Trabalhador (
                     )
                     VALUES(
                         "092797409",
-                        "Ana Júlia Fonseca",
+                        "Ana Julia Fonseca",
                         56,
                         "221843510"
                     );
@@ -576,7 +576,7 @@ INSERT INTO Bilheteiro (
                     )
                     VALUES(
                         "139514911",
-                        "Campanhã"
+                        "Campanha"
                     );
 
 INSERT INTO Bilheteiro (   
@@ -638,89 +638,302 @@ INSERT INTO Revisor (
 
 --Table: Comboio
 INSERT INTO Comboio (   
-                        id,
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        "GE Transportation",
+                        "NAHX 44703"
+                    );
+
+INSERT INTO Comboio (   
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        "GE Transportation",
+                        "NAHX 44703"
+                    );
+
+INSERT INTO Comboio (   
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        "GE Transportation",
+                        "NAHX 44703"
+                    );
+
+INSERT INTO Comboio (   
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        "GE Transportation",
+                        "NAHX 38781"
+                    );
+
+INSERT INTO Comboio (   
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        "GE Transportation",
+                        "NAHX 38781"
+                    );
+
+INSERT INTO Comboio (   
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        "Stadler",
+                        "Regio-Shuttle RS1"
+                    );
+
+INSERT INTO Comboio (   
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        "Stadler",
+                        "FLIRT"
+                    );
+
+INSERT INTO Comboio (   
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        "Stadler",
+                        "FLIRT"
+                    );
+
+INSERT INTO Comboio (   
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        "Stadler",
+                        "SPATZ"
+                    );
+
+INSERT INTO Comboio (   
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        "Korail",
+                        "ITX-Saemaul"
+                    );
+
+
+INSERT INTO Comboio (   
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        "Korail",
+                        "ITX-Saemaul"
+                    );
+
+INSERT INTO Comboio (   
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        "DB",
+                        "ICE 4"
+                    );
+
+
+
+--Table: ComboioVelocidade
+INSERT INTO ComboioVel(   
                         marca,
                         modelo,
+                        velMaxima
+                    )
+                    VALUES(
+                        "GE Transportation",
+                        "NAHX 44703",
+                        103
+                    );
+
+INSERT INTO ComboioVel(   
+                        marca,
+                        modelo,
+                        velMaxima
+                    )
+                    VALUES(
+                        "GE Transportation",
+                        "NAHX 38781",
+                        97
+                    );
+
+INSERT INTO ComboioVel(   
+                        marca,
+                        modelo,
+                        velMaxima
+                    )
+                    VALUES(
+                        "Stadler",
+                        "Regio-Shuttle RS1",
+                        193
+                    );
+
+INSERT INTO ComboioVel(   
+                        marca,
+                        modelo,
+                        velMaxima
+                    )
+                    VALUES(
+                        "Stadler",
+                        "FLIRT",
+                        203
+                    );
+
+INSERT INTO ComboioVel(   
+                        marca,
+                        modelo,
+                        velMaxima
+                    )
+                    VALUES(
+                        "Stadler",
+                        "Spatz",
+                        213
+                    );
+
+INSERT INTO ComboioVel(   
+                        marca,
+                        modelo,
+                        velMaxima
+                    )
+                    VALUES(
+                        "Korail",
+                        "ITX-Saemaul",
+                        290
+                    );
+
+INSERT INTO ComboioVel(   
+                        marca,
+                        modelo,
+                        velMaxima
+                    )
+                    VALUES(
+                        "DB",
+                        "ICE 4",
+                        201
+                    );
+
+
+--Table: ComboioCarga
+INSERT INTO ComboioCarga(   
+                        id,
+                        maxCarga
                     )
                     VALUES(
                         1,
-                        "GE Transportation",
-                        "NAHX 44703"
+                        3.3
                     );
 
-INSERT INTO Comboio (   
+INSERT INTO ComboioCarga(   
                         id,
-                        marca,
-                        modelo,
+                        maxCarga
                     )
                     VALUES(
                         2,
-                        "GE Transportation",
-                        "NAHX 44703"
+                        3.2
                     );
 
-INSERT INTO Comboio (   
+INSERT INTO ComboioCarga(   
                         id,
-                        marca,
-                        modelo,
+                        maxCarga
                     )
                     VALUES(
                         3,
-                        "GE Transportation",
-                        "NAHX 44703"
+                        3.3
                     );
 
-INSERT INTO Comboio (   
-                        id,
-                        marca,
-                        modelo,
-                    )
-                    VALUES(
-                        4,
-                        "GE Transportation",
-                        "NAHX 38781"
-                    );
 
-INSERT INTO Comboio (   
-                        id,
-                        marca,
-                        modelo,
-                    )
-                    VALUES(
-                        5,
-                        "GE Transportation",
-                        "NAHX 38781"
-                    );
+--Table: ComboioPassageiros
+INSERT INTO ComboioPassageiros(   
+                                id,
+                                lugares
+                            )
+                            VALUES(
+                                4,
+                                120
+                            );
 
-INSERT INTO Comboio (   
-                        id,
-                        marca,
-                        modelo,
-                    )
-                    VALUES(
-                        6,
-                        "Stadler",
-                        "Regio-Shuttle RS1"
-                    );
+INSERT INTO ComboioPassageiros(   
+                                id,
+                                lugares
+                            )
+                            VALUES(
+                                5,
+                                115
+                            );
 
-INSERT INTO Comboio (   
-                        id,
-                        marca,
-                        modelo,
-                    )
-                    VALUES(
-                        7,
-                        "Stadler",
-                        "Regio-Shuttle RS1"
-                    );
+INSERT INTO ComboioPassageiros(   
+                                id,
+                                lugares
+                            )
+                            VALUES(
+                                6,
+                                135
+                            );
 
-INSERT INTO Comboio (   
-                        id,
-                        marca,
-                        modelo,
-                    )
-                    VALUES(
-                        8,
-                        "Stadler",
-                        "Regio-Shuttle RS1"
-                    );
+INSERT INTO ComboioPassageiros(   
+                                id,
+                                lugares
+                            )
+                            VALUES(
+                                7,
+                                210
+                            );
+
+INSERT INTO ComboioPassageiros(   
+                                id,
+                                lugares
+                            )
+                            VALUES(
+                                8,
+                                198
+                            );
+
+INSERT INTO ComboioPassageiros(   
+                                id,
+                                lugares
+                            )
+                            VALUES(
+                                9,
+                                140
+                            );
+
+INSERT INTO ComboioPassageiros(   
+                                id,
+                                lugares
+                            )
+                            VALUES(
+                                10,
+                                210
+                            );
+
+INSERT INTO ComboioPassageiros(   
+                                id,
+                                lugares
+                            )
+                            VALUES(
+                                11,
+                                210
+                            );
+
+INSERT INTO ComboioPassageiros(   
+                                id,
+                                lugares
+                            )
+                            VALUES(
+                                12,
+                                188
+                            );

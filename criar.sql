@@ -21,7 +21,7 @@ DROP TABLE IF EXISTS Trabalhador;
 DROP TABLE IF EXISTS ComboioCarga;
 DROP TABLE IF EXISTS ComboioPassageiros;
 DROP TABLE IF EXISTS Comboio;
-DROP TABLE IF EXISTS ComboioVelocidade;
+DROP TABLE IF EXISTS ComboioVel;
 
 CREATE TABLE Cliente(
     nif TEXT PRIMARY KEY,
@@ -73,7 +73,7 @@ CREATE TABLE Rota(
 
     titulo TEXT,
     
-    nomeServico TEXT REFERENCES Servico ON DELETE CASCADE, 
+    nomeServico TEXT REFERENCES Servico ON DELETE CASCADE
                                         ON UPDATE CASCADE
 );
 
@@ -136,7 +136,7 @@ CREATE TABLE Revisor(
 );
 
 CREATE TABLE Comboio(
-    id INTEGER PRIMARY KEY,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
 
     marca TEXT NOT NULL,
 
@@ -145,7 +145,7 @@ CREATE TABLE Comboio(
     CHECK(marca NOT GLOB '*[^a-zA-Z ]*')
 );
 
-CREATE TABLE ComboioVelocidade(
+CREATE TABLE ComboioVel(
     marca TEXT NOT NULL,
 
     modelo TEXT NOT NULL,
@@ -158,17 +158,21 @@ CREATE TABLE ComboioVelocidade(
 );
 
 CREATE TABLE ComboioCarga(
-    id INTEGER REFERENCES Comboio1(id)  ON DELETE CASCADE 
+    id INTEGER REFERENCES Comboio(id)   ON DELETE CASCADE 
                                         ON UPDATE CASCADE,
 
-    maxCarga INTEGER CHECK (maxCarga > 0 AND maxCarga < 5)
+    maxCarga FLOAT CHECK (maxCarga > 0 AND maxCarga < 5),
+
+    PRIMARY KEY(id)
 );
 
 CREATE TABLE ComboioPassageiros(
-    id INTEGER REFERENCES Comboio1(id)  ON DELETE CASCADE 
+    id INTEGER REFERENCES Comboio(id)   ON DELETE CASCADE 
                                         ON UPDATE CASCADE,
 
-    lugares INTEGER CHECK (lugares > 0)
+    lugares INTEGER CHECK (lugares > 0),
+
+    PRIMARY KEY(id)
 );
 
 
