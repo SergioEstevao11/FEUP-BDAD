@@ -1369,3 +1369,51 @@ INSERT INTO Informacao(
                     70
                 );
 
+
+--Table : Viagem
+
+INSERT INTO Viagem(   
+                    data,
+                    horaDePartida,
+                    idComboio,
+                    idRota,
+                    nifMaquinista
+                )
+                VALUES(
+                    "10/05/2021",
+                    "09:30",
+                    5,
+                    1,
+                    "119608152"   
+                );
+
+INSERT INTO Viagem(   
+                    data,
+                    horaDePartida,
+                    idComboio,
+                    idRota,
+                    nifMaquinista
+                )
+                VALUES(
+                    "10/05/2021",
+                    "10:30",
+                    4,
+                    2,
+                    "659387578"   
+                );
+
+INSERT INTO Viagem(   
+                    data,
+                    horaDePartida,
+                    idComboio,
+                    idRota,
+                    nifMaquinista
+                )
+                VALUES(
+                    "11/05/2021",
+                    "17:30",
+                    7,
+                    3,
+                    "052416241"   
+                );
+               
