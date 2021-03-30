@@ -634,3 +634,93 @@ INSERT INTO Revisor (
                         "601853725",
                         "223091524"
                     );
+
+
+--Table: Comboio
+INSERT INTO Comboio (   
+                        id,
+                        marca,
+                        modelo,
+                    )
+                    VALUES(
+                        1,
+                        "GE Transportation",
+                        "NAHX 44703"
+                    );
+
+INSERT INTO Comboio (   
+                        id,
+                        marca,
+                        modelo,
+                    )
+                    VALUES(
+                        2,
+                        "GE Transportation",
+                        "NAHX 44703"
+                    );
+
+INSERT INTO Comboio (   
+                        id,
+                        marca,
+                        modelo,
+                    )
+                    VALUES(
+                        3,
+                        "GE Transportation",
+                        "NAHX 44703"
+                    );
+
+INSERT INTO Comboio (   
+                        id,
+                        marca,
+                        modelo,
+                    )
+                    VALUES(
+                        4,
+                        "GE Transportation",
+                        "NAHX 38781"
+                    );
+
+INSERT INTO Comboio (   
+                        id,
+                        marca,
+                        modelo,
+                    )
+                    VALUES(
+                        5,
+                        "GE Transportation",
+                        "NAHX 38781"
+                    );
+
+INSERT INTO Comboio (   
+                        id,
+                        marca,
+                        modelo,
+                    )
+                    VALUES(
+                        6,
+                        "Stadler",
+                        "Regio-Shuttle RS1"
+                    );
+
+INSERT INTO Comboio (   
+                        id,
+                        marca,
+                        modelo,
+                    )
+                    VALUES(
+                        7,
+                        "Stadler",
+                        "Regio-Shuttle RS1"
+                    );
+
+INSERT INTO Comboio (   
+                        id,
+                        marca,
+                        modelo,
+                    )
+                    VALUES(
+                        8,
+                        "Stadler",
+                        "Regio-Shuttle RS1"
+                    );

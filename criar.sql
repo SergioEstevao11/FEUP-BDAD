@@ -4,13 +4,13 @@ PRAGMA foreign_keys = on;
 .headers on
 
 DROP TABLE IF EXISTS Assinatura;
-DROP TABLE IF EXISTS Bilhete1;
-DROP TABLE IF EXISTS Bilhete2;
+DROP TABLE IF EXISTS Bilhete;
+DROP TABLE IF EXISTS BilhetePreco;
 DROP TABLE IF EXISTS Cliente;
 DROP TABLE IF EXISTS Informacao;
 DROP TABLE IF EXISTS RevisorViagem;
-DROP TABLE IF EXISTS Viagem1;
-DROP TABLE IF EXISTS Viagem2;
+DROP TABLE IF EXISTS Viagem;
+DROP TABLE IF EXISTS ViagemHoras;
 DROP TABLE IF EXISTS Rota;
 DROP TABLE IF EXISTS Servico;
 DROP TABLE IF EXISTS Estacao;
@@ -20,8 +20,8 @@ DROP TABLE IF EXISTS Bilheteiro;
 DROP TABLE IF EXISTS Trabalhador;
 DROP TABLE IF EXISTS ComboioCarga;
 DROP TABLE IF EXISTS ComboioPassageiros;
-DROP TABLE IF EXISTS Comboio1;
-DROP TABLE IF EXISTS Comboio2;
+DROP TABLE IF EXISTS Comboio;
+DROP TABLE IF EXISTS ComboioVelocidade;
 
 CREATE TABLE Cliente(
     nif TEXT PRIMARY KEY,
@@ -73,7 +73,7 @@ CREATE TABLE Rota(
 
     titulo TEXT,
     
-    nomeServico TEXT REFERENCES Servico ON DELETE CASCADE 
+    nomeServico TEXT REFERENCES Servico ON DELETE CASCADE, 
                                         ON UPDATE CASCADE
 );
 
@@ -88,7 +88,7 @@ CREATE TABLE Informacao(
 );
 
 CREATE TABLE Trabalhador(
-    nif TEXT PRIMARY KEY    CHECK(LENGTH(nif) == 9 AND nif NOT GLOB '*[^0-9]*'),
+    nif TEXT PRIMARY KEY  CHECK(LENGTH(nif) == 9 AND nif NOT GLOB '*[^0-9]*'),
 
     nome TEXT,
 
@@ -135,7 +135,7 @@ CREATE TABLE Revisor(
     CHECK(identificacao NOT GLOB '*[^0-9]*')
 );
 
-CREATE TABLE Comboio1(
+CREATE TABLE Comboio(
     id INTEGER PRIMARY KEY,
 
     marca TEXT NOT NULL,
@@ -145,7 +145,7 @@ CREATE TABLE Comboio1(
     CHECK(marca NOT GLOB '*[^a-zA-Z ]*')
 );
 
-CREATE TABLE Comboio2(
+CREATE TABLE ComboioVelocidade(
     marca TEXT NOT NULL,
 
     modelo TEXT NOT NULL,
@@ -172,7 +172,7 @@ CREATE TABLE ComboioPassageiros(
 );
 
 
-CREATE TABLE Viagem1(
+CREATE TABLE Viagem(
     id INTEGER PRIMARY KEY,
 
     data INTEGER NOT NULL,
@@ -189,7 +189,7 @@ CREATE TABLE Viagem1(
                                         ON UPDATE CASCADE
 );
 
-CREATE TABLE Viagem2(
+CREATE TABLE ViagemHoras(
     horaDePartida INTEGER NOT NULL,
 
     idRota INTEGER REFERENCES Rota  ON DELETE CASCADE 
@@ -211,8 +211,7 @@ CREATE TABLE RevisorViagem(
     PRIMARY KEY(nifRevisor, idViagem)
 );
 
---mudar os cascades
-CREATE TABLE Bilhete1(
+CREATE TABLE Bilhete(
     id INTEGER PRIMARY KEY,
 
     lugarDestinado TEXT NOT NULL,
@@ -236,7 +235,7 @@ CREATE TABLE Bilhete1(
 );
 
 
-CREATE TABLE Bilhete2(
+CREATE TABLE BilhetePreco(
     moradaEstacaoPartida REFERENCES Estacao ON DELETE CASCADE 
                                             ON UPDATE CASCADE,
 
