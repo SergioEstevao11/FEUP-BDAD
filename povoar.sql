@@ -1370,7 +1370,7 @@ INSERT INTO Informacao(
                 );
 
 
---Table : Viagem
+--Table: Viagem
 
 INSERT INTO Viagem(   
                     data,
@@ -1411,9 +1411,358 @@ INSERT INTO Viagem(
                 )
                 VALUES(
                     "11/05/2021",
-                    "17:30",
-                    7,
+                    "11:30",
+                    6,
                     3,
                     "052416241"   
                 );
+
+INSERT INTO Viagem(   
+                    data,
+                    horaDePartida,
+                    idComboio,
+                    idRota,
+                    nifMaquinista
+                )
+                VALUES(
+                    "11/05/2021",
+                    "17:30",
+                    7,
+                    3,
+                    "659387578"     
+                );
+
+INSERT INTO Viagem(   
+                    data,
+                    horaDePartida,
+                    idComboio,
+                    idRota,
+                    nifMaquinista
+                )
+                VALUES(
+                    "12/05/2021",
+                    "08:30",
+                    9,
+                    4,
+                    "119608152"      
+                );
+
+INSERT INTO Viagem(   
+                    data,
+                    horaDePartida,
+                    idComboio,
+                    idRota,
+                    nifMaquinista
+                )
+                VALUES(
+                    "12/05/2021",
+                    "15:30",
+                    9,
+                    5,
+                    "119608152"      
+                );
+
+INSERT INTO Viagem(   
+                    data,
+                    horaDePartida,
+                    idComboio,
+                    idRota,
+                    nifMaquinista
+                )
+                VALUES(
+                    "15/05/2021",
+                    "18:00",
+                    12,
+                    3,
+                    "659387578"       
+                );
+
+INSERT INTO Viagem(   
+                    data,
+                    horaDePartida,
+                    idComboio,
+                    idRota,
+                    nifMaquinista
+                )
+                VALUES(
+                    "01/06/2021",
+                    "10:00",
+                    11,
+                    1,
+                    "052416241"        
+                );
+
+
+--Carga
+/*INSERT INTO Viagem(   
+                    data,
+                    horaDePartida,
+                    idComboio,
+                    idRota,
+                    nifMaquinista
+                )
+                VALUES(
+                    "03/07/2021",
+                    "15:45",
+                    2,
+                    1,
+                    "659387578"       
+                );
+
+INSERT INTO Viagem(   
+                    data,
+                    horaDePartida,
+                    idComboio,
+                    idRota,
+                    nifMaquinista
+                )
+                VALUES(
+                    "18/07/2021",
+                    "10:00",
+                    1,
+                    3,
+                    "052416241"        
+                );
+
+INSERT INTO Viagem(   
+                    data,
+                    horaDePartida,
+                    idComboio,
+                    idRota,
+                    nifMaquinista
+                )
+                VALUES(
+                    "20/07/2021",
+                    "10:00",
+                    3,
+                    4,
+                    "119608152"        
+                );
+
+INSERT INTO Viagem(   
+                    data,
+                    horaDePartida,
+                    idComboio,
+                    idRota,
+                    nifMaquinista
+                )
+                VALUES(
+                    "29/07/2021",
+                    "19:30",
+                    1,
+                    2,
+                    "052416241"        
+                );*/
+
+--Table: ViagemHoras
+
+INSERT INTO ViagemHoras(   
+                    horaDePartida,
+                    idRota,
+                    horaDeChegada
+                )
+                VALUES(
+                    "09:30",
+                    1,
+                    "15:21"     
+                );
+
+
+INSERT INTO ViagemHoras(   
+                    horaDePartida,
+                    idRota,
+                    horaDeChegada
+                )
+                VALUES(
+                    "10:30",
+                    2,
+                    "13:44"     
+                );
+
+INSERT INTO ViagemHoras(   
+                    horaDePartida,
+                    idRota,
+                    horaDeChegada
+                )
+                VALUES(
+                    "11:30",
+                    3,
+                    "14:45"     
+                );
+
+INSERT INTO ViagemHoras(   
+                    horaDePartida,
+                    idRota,
+                    horaDeChegada
+                )
+                VALUES(
+                    "17:30",
+                    3,
+                    "20:45"     
+                );
+
+
+INSERT INTO ViagemHoras(   
+                    horaDePartida,
+                    idRota,
+                    horaDeChegada
+                )
+                VALUES(
+                    "08:30",
+                    4,
+                    "09:30"     
+                );
+
+
+INSERT INTO ViagemHoras(   
+                    horaDePartida,
+                    idRota,
+                    horaDeChegada
+                )
+                VALUES(
+                    "15:30",
+                    5,
+                    "16:30"     
+                );
+
+INSERT INTO ViagemHoras(   
+                    horaDePartida,
+                    idRota,
+                    horaDeChegada
+                )
+                VALUES(
+                    "18:00",
+                    3,
+                    "21:15"     
+                );
+
+INSERT INTO ViagemHoras(   
+                    horaDePartida,
+                    idRota,
+                    horaDeChegada
+                )
+                VALUES(
+                    "10:00",
+                    1,
+                    "15:51"     
+                );
+
+--Carga
+
+/*INSERT INTO ViagemHoras(   
+                    horaDePartida,
+                    idRota,
+                    horaDeChegada
+                )
+                VALUES(
+                    "15:45",
+                    1,
+                    "21:36"     
+                );
+
+INSERT INTO ViagemHoras(   
+                    horaDePartida,
+                    idRota,
+                    horaDeChegada
+                )
+                VALUES(
+                    "10:00",
+                    3,
+                    "13:15"     
+                );
+
+
+INSERT INTO ViagemHoras(   
+                    horaDePartida,
+                    idRota,
+                    horaDeChegada
+                )
+                VALUES(
+                    "10:00",
+                    4,
+                    "11:00"     
+                );
+
+INSERT INTO ViagemHoras(   
+                    horaDePartida,
+                    idRota,
+                    horaDeChegada
+                )
+                VALUES(
+                    "19:30",
+                    2,
+                    "22:44"     
+                );
+
+*/
+--Table: Bilhete
+
+-- INSERT INTO Bilhete(   
+--                     lugarDestinado,
+--                     nifCliente,
+--                     nomeEstacaoPartida,
+--                     nomeEstacaoChegada,
+--                     idViagem,
+--                     nifBilheteiro
+--                 )
+--                 VALUES(
+--                     "Faro",
+--                     "131199282",
+--                     "Porto",
+--                     "Faro",
+--                     1,
+--                     "139514911"
+--                 );
+
+
+-- INSERT INTO Bilhete(   
+--                     lugarDestinado,
+--                     nifCliente,
+--                     nomeEstacaoPartida,
+--                     nomeEstacaoChegada,
+--                     idViagem,
+--                     nifBilheteiro
+--                 )
+--                 VALUES(
+--                     "Oriente",
+--                     "773734252",
+--                     "Porto",
+--                     "Faro",
+--                     1,
+--                     "139514911"
+--                 );
+
+-- INSERT INTO Bilhete(   
+--                     lugarDestinado,
+--                     nifCliente,
+--                     nomeEstacaoPartida,
+--                     nomeEstacaoChegada,
+--                     idViagem,
+--                     nifBilheteiro
+--                 )
+--                 VALUES(
+--                     "Coimbra-B",
+--                     "659387578",
+--                     "Porto",
+--                     "Faro",
+--                     1,
+--                     "139514911"
+--                 );
+
+--Table: BilhetePreço
+
+-- INSERT INTO BilhetePreço(   
+--                     moradaEstacaoPartida,
+--                     moradaEstacaoChegada,
+--                     idViagem,
+--                     preco
+--                 )
+--                 VALUES(
+--                     "Coimbra-B",
+--                     "659387578",
+--                     "Porto",
+--                     "Faro",
+--                     1,
+--                     "139514911"
+--                 );
                
