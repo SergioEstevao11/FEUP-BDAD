@@ -1,5 +1,6 @@
 PRAGMA foreign_keys = on;
 
+
 --Table : Servico
 INSERT INTO Servico (   
                         nome
@@ -1697,72 +1698,325 @@ INSERT INTO ViagemHoras(
 */
 --Table: Bilhete
 
--- INSERT INTO Bilhete(   
---                     lugarDestinado,
---                     nifCliente,
---                     nomeEstacaoPartida,
---                     nomeEstacaoChegada,
---                     idViagem,
---                     nifBilheteiro
---                 )
---                 VALUES(
---                     "Faro",
---                     "131199282",
---                     "Porto",
---                     "Faro",
---                     1,
---                     "139514911"
---                 );
+INSERT INTO Bilhete(   
+                    lugarDestinado,
+                    nifCliente,
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    nifBilheteiro
+                )
+                VALUES(
+                    "43",
+                    "131199282",
+                    "Campanha",
+                    "Tunes",
+                    1,
+                    "139514911"
+                );
 
 
--- INSERT INTO Bilhete(   
---                     lugarDestinado,
---                     nifCliente,
---                     nomeEstacaoPartida,
---                     nomeEstacaoChegada,
---                     idViagem,
---                     nifBilheteiro
---                 )
---                 VALUES(
---                     "Oriente",
---                     "773734252",
---                     "Porto",
---                     "Faro",
---                     1,
---                     "139514911"
---                 );
+INSERT INTO Bilhete(   
+                    lugarDestinado,
+                    nifCliente,
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    nifBilheteiro
+                )
+                VALUES(
+                    "19",
+                    "773734252",
+                    "Campanha",
+                    "Tunes",
+                    1,
+                    "139514911"
+                );
 
--- INSERT INTO Bilhete(   
---                     lugarDestinado,
---                     nifCliente,
---                     nomeEstacaoPartida,
---                     nomeEstacaoChegada,
---                     idViagem,
---                     nifBilheteiro
---                 )
---                 VALUES(
---                     "Coimbra-B",
---                     "659387578",
---                     "Porto",
---                     "Faro",
---                     1,
---                     "139514911"
---                 );
+INSERT INTO Bilhete(   
+                    lugarDestinado,
+                    nifCliente,
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    nifBilheteiro
+                )
+                VALUES(
+                    "38",
+                    "545580961",
+                    "Campanha",
+                    "Tunes",
+                    1,
+                    "139514911"
+                );
+
+INSERT INTO Bilhete(   
+                    lugarDestinado,
+                    nifCliente,
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    nifBilheteiro
+                )
+                VALUES(
+                    "08",
+                    "115299474",
+                    "Oriente",
+                    "Campanha",
+                    2,
+                    "956978340"
+                );
+
+INSERT INTO Bilhete(   
+                    lugarDestinado,
+                    nifCliente,
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    nifBilheteiro
+                )
+                VALUES(
+                    "65",
+                    "570208196",
+                    "Oriente",
+                    "Campanha",
+                    2,
+                    "956978340"
+                );                
+
+INSERT INTO Bilhete(   
+                    lugarDestinado,
+                    nifCliente,
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    nifBilheteiro
+                )
+                VALUES(
+                    "75",
+                    "834419570",
+                    "Campanha",
+                    "Oriente",
+                    3,
+                    "139514911"
+                );
+
+
+
+INSERT INTO Bilhete(   
+                    lugarDestinado,
+                    nifCliente,
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    nifBilheteiro
+                )
+                VALUES(
+                    "101",
+                    "025456613",
+                    "Aveiro",
+                    "Coimbra-B",
+                    6,
+                    NULL
+                );
+
+INSERT INTO Bilhete(   
+                    lugarDestinado,
+                    nifCliente,
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    nifBilheteiro
+                )
+                VALUES(
+                    "102",
+                    "798467573",
+                    "Aveiro",
+                    "Coimbra-B",
+                    6,
+                    NULL
+                );
 
 --Table: BilhetePreço
 
--- INSERT INTO BilhetePreço(   
---                     moradaEstacaoPartida,
---                     moradaEstacaoChegada,
---                     idViagem,
---                     preco
---                 )
---                 VALUES(
---                     "Coimbra-B",
---                     "659387578",
---                     "Porto",
---                     "Faro",
---                     1,
---                     "139514911"
---                 );
-               
+INSERT INTO BilhetePreco(   
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    preco
+                )
+                VALUES(
+                    "Campanha",
+                    "Tunes",
+                    1,
+                    30.0
+                );
+
+INSERT INTO BilhetePreco(   
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    preco
+                )
+                VALUES(
+                    "Oriente",
+                    "Campanha",
+                    2,
+                    15.50
+                );
+
+
+INSERT INTO BilhetePreco(   
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    preco
+                )
+                VALUES(
+                    "Campanha",
+                    "Oriente",
+                    3,
+                    15.50
+                );
+
+INSERT INTO BilhetePreco(   
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    preco
+                )
+                VALUES(
+                    "Aveiro",
+                    "Coimbra-B",
+                    6,
+                    10.30
+                );
+
+-- Table : Assinatura
+
+INSERT INTO Assinatura(
+                    nif,
+                    nomeServico,
+                    IDPasse
+                )
+                VALUES(
+                    "617323133",
+                    "Alfa-Pendular",
+                    987123
+                );
+
+INSERT INTO Assinatura(
+                    nif,
+                    nomeServico,
+                    IDPasse
+                )
+                VALUES(
+                    "456702207",
+                    "Regional",
+                    852741
+                );
+
+INSERT INTO Assinatura(
+                    nif,
+                    nomeServico,
+                    IDPasse
+                )
+                VALUES(
+                    "156703269",
+                    "Intercidades",
+                    963321
+                );
+
+-- Table : RevisorViagem
+
+INSERT INTO RevisorViagem(
+                    nifRevisor,
+                    idViagem
+                )
+                VALUES(
+                    "706598544",
+                    1
+                );
+
+
+INSERT INTO RevisorViagem(
+                    nifRevisor,
+                    idViagem
+                )
+                VALUES(
+                    "848547067",
+                    1
+                );
+
+INSERT INTO RevisorViagem(
+                    nifRevisor,
+                    idViagem
+                )
+                VALUES(
+                    "601853725",
+                    2
+                );
+
+INSERT INTO RevisorViagem(
+                    nifRevisor,
+                    idViagem
+                )
+                VALUES(
+                    "601853725",
+                    3
+                );
+                
+INSERT INTO RevisorViagem(
+                    nifRevisor,
+                    idViagem
+                )
+                VALUES(
+                    "092797409",
+                    4
+                );
+
+INSERT INTO RevisorViagem(
+                    nifRevisor,
+                    idViagem
+                )
+                VALUES(
+                    "848547067",
+                    4
+                );
+                
+INSERT INTO RevisorViagem(
+                    nifRevisor,
+                    idViagem
+                )
+                VALUES(
+                    "047417167",
+                    5
+                );
+                
+INSERT INTO RevisorViagem(
+                    nifRevisor,
+                    idViagem
+                )
+                VALUES(
+                    "092797409",
+                    6
+                );
+                
+INSERT INTO RevisorViagem(
+                    nifRevisor,
+                    idViagem
+                )
+                VALUES(
+                    "047417167",
+                    7
+                );
+                
+INSERT INTO RevisorViagem(
+                    nifRevisor,
+                    idViagem
+                )
+                VALUES(
+                    "706598544",
+                    8
+                );
+

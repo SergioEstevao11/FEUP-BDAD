@@ -242,10 +242,10 @@ CREATE TABLE Bilhete(
 
 
 CREATE TABLE BilhetePreco(
-    moradaEstacaoPartida REFERENCES Estacao ON DELETE CASCADE 
+    nomeEstacaoPartida REFERENCES Estacao ON DELETE CASCADE 
                                             ON UPDATE CASCADE,
 
-    moradaEstacaoChegada REFERENCES Estacao ON DELETE CASCADE 
+    nomeEstacaoChegada REFERENCES Estacao ON DELETE CASCADE 
                                             ON UPDATE CASCADE,
 
     idViagem REFERENCES Viagem  ON DELETE CASCADE 
@@ -253,5 +253,5 @@ CREATE TABLE BilhetePreco(
 
     preco FLOAT CHECK(preco > 0),
     
-    PRIMARY KEY(moradaEstacaoPartida, moradaEstacaoChegada,idViagem)
+    PRIMARY KEY(nomeEstacaoPartida, nomeEstacaoChegada,idViagem)
 );
