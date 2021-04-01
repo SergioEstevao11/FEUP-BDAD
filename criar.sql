@@ -89,7 +89,7 @@ CREATE TABLE Maquinista(
     nome        TEXT,
     idade       INTEGER CONSTRAINT ck_maquinista_idade CHECK(idade >= 18)
                         CONSTRAINT nn_maquinista_idade NOT NULL,
-    numTelefone TEXT    CONSTRAINT ck_maquinista_numTelefone CHECK(LENGTH(numTelefone) == 9 AND nif NOT GLOB '*[^0-9]*'),
+    numTelefone TEXT    CONSTRAINT ck_maquinista_numTelefone CHECK(numTelefone LIKE '22_______' AND numTelefone NOT GLOB '*[^0-9]*'),
     numLicensa  TEXT    CONSTRAINT ck_maquinista_numLicensa CHECK(LENGTH(numLicensa) == 12 AND numLicensa NOT GLOB '*[^0-9]*')
                         CONSTRAINT nn_maquinista_numLicensa NOT NULL
 );
@@ -101,7 +101,7 @@ CREATE TABLE Bilheteiro(
     nome        TEXT,
     idade       INTEGER CONSTRAINT ck_bilheteiro_idade CHECK(idade >= 18)
                         CONSTRAINT nn_bilheteiro_idade NOT NULL,
-    numTelefone TEXT    CONSTRAINT ck_bilheteiro_numTelefone CHECK(LENGTH(numTelefone) == 9 AND nif NOT GLOB '*[^0-9]*'),
+    numTelefone TEXT    CONSTRAINT ck_bilheteiro_numTelefone CHECK(numTelefone LIKE '22_______' AND numTelefone NOT GLOB '*[^0-9]*'),
     nomeEstacao TEXT    CONSTRAINT fk_bilheteiro_estacao REFERENCES Estacao ON DELETE CASCADE 
                                                                             ON UPDATE CASCADE
                         CONSTRAINT nn_bilheteiro_nomeEstacao NOT NULL
@@ -114,7 +114,7 @@ CREATE TABLE Revisor(
     nome          TEXT,
     idade         INTEGER CONSTRAINT ck_revisor_idade CHECK(idade >= 18)
                           CONSTRAINT nn_revisor_idade NOT NULL,
-    numTelefone   TEXT    CONSTRAINT ck_revisor_numTelefone CHECK(LENGTH(numTelefone) == 9 AND nif NOT GLOB '*[^0-9]*'),                                                              
+    numTelefone   TEXT    CONSTRAINT ck_revisor_numTelefone CHECK(numTelefone LIKE '22_______' AND numTelefone NOT GLOB '*[^0-9]*'),                                                            
     identificacao TEXT    CONSTRAINT ck_revisor_identificacao CHECK(LENGTH(identificacao) == 9 AND identificacao NOT GLOB '*[^0-9]*')
                           CONSTRAINT nn_revisor_identificacao NOT NULL
 );
@@ -217,7 +217,8 @@ CREATE TABLE BilhetePreco(
     idViagem           INTEGER CONSTRAINT fk_bilhetePreco_viagem REFERENCES Viagem  ON DELETE CASCADE 
                                                                                     ON UPDATE CASCADE
                                CONSTRAINT nn_bilhetePreco_idViagem NOT NULL,
-    preco              FLOAT   CONSTRAINT fk_bilhetePreco_preco CHECK(preco > 0),
+    preco              FLOAT   CONSTRAINT fk_bilhetePreco_preco CHECK(preco > 0)
+                               CONSTRAINT nn_bilhetePreco_preco NOT NULL,
     CONSTRAINT ck_bilhetePreco_nomeEstacaoPartida_nomeEstacaoChegada CHECK(nomeEstacaoChegada != nomeEstacaoPartida),
     PRIMARY KEY(nomeEstacaoPartida, nomeEstacaoChegada,idViagem)
 );
