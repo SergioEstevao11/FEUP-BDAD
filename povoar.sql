@@ -1689,7 +1689,6 @@ INSERT INTO Bilhete(
                 );
 
 --Table: BilhetePreço
-
 INSERT INTO BilhetePreco(   
                     nomeEstacaoPartida,
                     nomeEstacaoChegada,
