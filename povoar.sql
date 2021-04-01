@@ -6,28 +6,35 @@ INSERT INTO Servico (
                         nome
                     )
                     VALUES(
-                        "Alfa-Pendular"
+                        'Alfa-Pendular'
                     );
             
 INSERT INTO Servico (   
                         nome
                     )
                     VALUES(
-                        "Intercidades"
+                        'Intercidades'
                     );
 
 INSERT INTO Servico (   
                         nome
                     )
                     VALUES(
-                        "Regional"
+                        'Regional'
                     );
 
 INSERT INTO Servico (   
                         nome
                     )
                     VALUES(
-                        "Urbano"
+                        'Urbano'
+                    );
+
+INSERT INTO Servico (   
+                        nome
+                    )
+                    VALUES(
+                        'Cargas'
                     );
 
 --Table : Cliente
@@ -36,8 +43,8 @@ INSERT INTO Cliente (
                         nome
                     )
                     VALUES(
-                        "131199282",
-                        "Rodrigo Tuna de Andrade"
+                        '131199282',
+                        'Rodrigo Tuna de Andrade'
                     );
 
 INSERT INTO Cliente (   
@@ -45,8 +52,8 @@ INSERT INTO Cliente (
                         nome
                     )
                     VALUES(
-                        "766573459",
-                        "Clara Goncalves da Costa"
+                        '766573459',
+                        'Clara Goncalves da Costa'
                     );
 
 INSERT INTO Cliente (   
@@ -54,8 +61,8 @@ INSERT INTO Cliente (
                         nome
                     )
                     VALUES(
-                        "834419570",
-                        "Joaquim Fernando Teixeira"
+                        '834419570',
+                        'Joaquim Fernando Teixeira'
                     );
 
 INSERT INTO Cliente (   
@@ -63,8 +70,8 @@ INSERT INTO Cliente (
                         nome
                     )
                     VALUES(
-                        "545580961",
-                        "Alexandre Borges Lopes"
+                        '545580961',
+                        'Alexandre Borges Lopes'
                     );
 
 INSERT INTO Cliente (   
@@ -72,8 +79,8 @@ INSERT INTO Cliente (
                         nome
                     )
                     VALUES(
-                        "773734252",
-                        "Sergio Miguel Rosa Estevao"
+                        '773734252',
+                        'Sergio Miguel Rosa Estevao'
                     );
 
 INSERT INTO Cliente (   
@@ -81,8 +88,8 @@ INSERT INTO Cliente (
                         nome
                     )
                     VALUES(
-                        "777374837",
-                        "Rogerio Antunes Figueiredo"
+                        '777374837',
+                        'Rogerio Antunes Figueiredo'
                     );
 
 INSERT INTO Cliente (   
@@ -90,8 +97,8 @@ INSERT INTO Cliente (
                         nome
                     )
                     VALUES(
-                        "156703269",
-                        "Joao Tiago Pereira Lopes"
+                        '156703269',
+                        'Joao Tiago Pereira Lopes'
                     );
 
 INSERT INTO Cliente (   
@@ -99,8 +106,8 @@ INSERT INTO Cliente (
                         nome
                     )
                     VALUES(
-                        "115299474",
-                        "Beatriz Teixeira da Cunha"
+                        '115299474',
+                        'Beatriz Teixeira da Cunha'
                     );
 
 INSERT INTO Cliente (   
@@ -108,8 +115,8 @@ INSERT INTO Cliente (
                         nome
                     )
                     VALUES(
-                        "881739114",
-                        "Jorge Marques Almeida"
+                        '881739114',
+                        'Jorge Marques Almeida'
                     );
 
 INSERT INTO Cliente (   
@@ -117,8 +124,8 @@ INSERT INTO Cliente (
                         nome
                     )
                     VALUES(
-                        "570208196",
-                        "Ricardo Jorge Pinto"
+                        '570208196',
+                        'Ricardo Jorge Pinto'
                     );
 
 INSERT INTO Cliente (   
@@ -126,8 +133,8 @@ INSERT INTO Cliente (
                         nome
                     )
                     VALUES(
-                        "459032296",
-                        "Elisa Nogueira Teixeira"
+                        '459032296',
+                        'Elisa Nogueira Teixeira'
                     );
 
 INSERT INTO Cliente (   
@@ -135,8 +142,8 @@ INSERT INTO Cliente (
                         nome
                     )
                     VALUES(
-                        "099922403",
-                        "Miguel Monteiro Mendes"
+                        '099922403',
+                        'Miguel Monteiro Mendes'
                     );
 
 INSERT INTO Cliente (   
@@ -144,8 +151,8 @@ INSERT INTO Cliente (
                         nome
                     )
                     VALUES(
-                        "219213078",
-                        "Rafaela Alexandra Silva"
+                        '219213078',
+                        'Rafaela Alexandra Silva'
                     );
 
 INSERT INTO Cliente (   
@@ -153,8 +160,8 @@ INSERT INTO Cliente (
                         nome
                     )
                     VALUES(
-                        "025456613",
-                        "Fernanda Lima Raposo"
+                        '025456613',
+                        'Fernanda Lima Raposo'
                     );
 
 INSERT INTO Cliente (   
@@ -162,8 +169,8 @@ INSERT INTO Cliente (
                         nome
                     )
                     VALUES(
-                        "201329033",
-                        "Margarida Gomes Godinho Completo"
+                        '201329033',
+                        'Margarida Gomes Godinho Completo'
                     );
 
 INSERT INTO Cliente (   
@@ -171,8 +178,8 @@ INSERT INTO Cliente (
                         nome
                     )
                     VALUES(
-                        "456702207",
-                        "Joana Ribeiro Gomes"
+                        '456702207',
+                        'Joana Ribeiro Gomes'
                     );
 
 INSERT INTO Cliente (   
@@ -180,8 +187,8 @@ INSERT INTO Cliente (
                         nome
                     )
                     VALUES(
-                        "798467573",
-                        "Susana Isabel Lessa"
+                        '798467573',
+                        'Susana Isabel Lessa'
                     );
 
 INSERT INTO Cliente (   
@@ -189,8 +196,8 @@ INSERT INTO Cliente (
                         nome
                     )
                     VALUES(
-                        "623677721",
-                        "Vasco Miguel Macedo"
+                        '623677721',
+                        'Vasco Miguel Macedo'
                     );
 
 INSERT INTO Cliente (   
@@ -198,8 +205,8 @@ INSERT INTO Cliente (
                         nome
                     )
                     VALUES(
-                        "689860351",
-                        "Maria do Ceu Ferreira"
+                        '689860351',
+                        'Maria do Ceu Ferreira'
                     );
 
 INSERT INTO Cliente (   
@@ -207,8 +214,8 @@ INSERT INTO Cliente (
                         nome
                     )
                     VALUES(
-                        "617323133",
-                        "Matilde Miranda Vaz"
+                        '617323133',
+                        'Matilde Miranda Vaz'
                     );
 
 
@@ -220,10 +227,10 @@ INSERT INTO Estacao (
                         localidade
                     )
                     VALUES(
-                        "Campanha",
-                        "Largo da Estacao",
-                        "4300-173",
-                        "Porto"
+                        'Campanha',
+                        'Largo da Estacao',
+                        '4300-173',
+                        'Porto'
                     );
 
 INSERT INTO Estacao (   
@@ -233,10 +240,10 @@ INSERT INTO Estacao (
                         localidade
                     )
                     VALUES(
-                        "Sao Bento",
-                        "Praca Almeida Garrett",
-                        "4000-069",
-                        "Porto"
+                        'Sao Bento',
+                        'Praca Almeida Garrett',
+                        '4000-069',
+                        'Porto'
                     );
 
 INSERT INTO Estacao (   
@@ -246,10 +253,10 @@ INSERT INTO Estacao (
                         localidade
                     )
                     VALUES(
-                        "Santa Apolonia",
-                        "Av. Infante D. Henrique",
-                        "1149-066",
-                        "Lisboa"
+                        'Santa Apolonia',
+                        'Av. Infante D. Henrique',
+                        '1149-066',
+                        'Lisboa'
                     );
 
 INSERT INTO Estacao (   
@@ -259,10 +266,10 @@ INSERT INTO Estacao (
                         localidade
                     )
                     VALUES(
-                        "Oriente",
-                        "Edificio Gare do Oriente, Piso 1 - Av. D. Joao II",
-                        "4000-069",
-                        "Lisboa"
+                        'Oriente',
+                        'Edificio Gare do Oriente, Piso 1 - Av. D. Joao II',
+                        '4000-069',
+                        'Lisboa'
                     );
 
 INSERT INTO Estacao (   
@@ -272,10 +279,10 @@ INSERT INTO Estacao (
                         localidade
                     )
                     VALUES(
-                        "Coimbra",
-                        "Largo da Ameias",
-                        "3000-024",
-                        "Coimbra"
+                        'Coimbra',
+                        'Largo da Ameias',
+                        '3000-024',
+                        'Coimbra'
                     );
 
 INSERT INTO Estacao (   
@@ -285,10 +292,10 @@ INSERT INTO Estacao (
                         localidade
                     )
                     VALUES(
-                        "Coimbra-B",
-                        "Rua do Padrao - Eiras",
-                        "3025-045",
-                        "Coimbra"
+                        'Coimbra-B',
+                        'Rua do Padrao - Eiras',
+                        '3025-045',
+                        'Coimbra'
                     );
 
 INSERT INTO Estacao (   
@@ -298,10 +305,10 @@ INSERT INTO Estacao (
                         localidade
                     )
                     VALUES(
-                        "Figueira da Foz",
-                        "Largo da Estacao",
-                        "3080-021",
-                        "Figueira da Foz"
+                        'Figueira da Foz',
+                        'Largo da Estacao',
+                        '3080-021',
+                        'Figueira da Foz'
                     );
 
 INSERT INTO Estacao (   
@@ -311,10 +318,10 @@ INSERT INTO Estacao (
                         localidade
                     )
                     VALUES(
-                        "Aveiro",
-                        "Largo da Estacao dos Caminhos de Ferro",
-                        "3800-179",
-                        "Aveiro"
+                        'Aveiro',
+                        'Largo da Estacao dos Caminhos de Ferro',
+                        '3800-179',
+                        'Aveiro'
                     );
 
 INSERT INTO Estacao (   
@@ -324,10 +331,10 @@ INSERT INTO Estacao (
                         localidade
                     )
                     VALUES(
-                        "Pampilhosa",
-                        "Rua da Estacao de Caminhos de Ferro",
-                        "3050-443",
-                        "Pampilhosa"
+                        'Pampilhosa',
+                        'Rua da Estacao de Caminhos de Ferro',
+                        '3050-443',
+                        'Pampilhosa'
                     );
 
 INSERT INTO Estacao (   
@@ -337,10 +344,10 @@ INSERT INTO Estacao (
                         localidade
                     )
                     VALUES(
-                        "Oliveira do Bairro",
-                        "Largo da Estacao",
-                        "3770-921",
-                        "Oliveira do Bairro"
+                        'Oliveira do Bairro',
+                        'Largo da Estacao',
+                        '3770-921',
+                        'Oliveira do Bairro'
                     );
 
 INSERT INTO Estacao (   
@@ -350,10 +357,10 @@ INSERT INTO Estacao (
                         localidade
                     )
                     VALUES(
-                        "Mealhada",
-                        "Av. Dr. Manuel Lousado",
-                        "3050-343",
-                        "Mealhada"
+                        'Mealhada',
+                        'Av. Dr. Manuel Lousado',
+                        '3050-343',
+                        'Mealhada'
                     );
 
 INSERT INTO Estacao (   
@@ -363,10 +370,10 @@ INSERT INTO Estacao (
                         localidade
                     )
                     VALUES(
-                        "Formoselha",
-                        "Largo da Estacao",
-                        "3140-401",
-                        "Formoselha"
+                        'Formoselha',
+                        'Largo da Estacao',
+                        '3140-401',
+                        'Formoselha'
                     );
 
 INSERT INTO Estacao (   
@@ -376,10 +383,10 @@ INSERT INTO Estacao (
                         localidade
                     )
                     VALUES(
-                        "Pombal",
-                        "Largo Salgueiro Maia",
-                        "3100-495",
-                        "Pombal"
+                        'Pombal',
+                        'Largo Salgueiro Maia',
+                        '3100-495',
+                        'Pombal'
                     );
 
 INSERT INTO Estacao (   
@@ -389,10 +396,10 @@ INSERT INTO Estacao (
                         localidade
                     )
                     VALUES(
-                        "Faro",
-                        "Largo da Estacao dos Caminhos de Ferro",
-                        "8000-133",
-                        "Faro"
+                        'Faro',
+                        'Largo da Estacao dos Caminhos de Ferro',
+                        '8000-133',
+                        'Faro'
                     );
 
 INSERT INTO Estacao (   
@@ -402,542 +409,374 @@ INSERT INTO Estacao (
                         localidade
                     )
                     VALUES(
-                        "Tunes",
-                        "Largo 13 de Maio",
-                        "8365-235",
-                        "Tunes"
-                    );
-
-
---Table: Trabalhador
-INSERT INTO Trabalhador (   
-                        nif,
-                        nome,
-                        idade,
-                        numTelefone
-                    )
-                    VALUES(
-                        "659387578",
-                        "Afonso Martins Andrade",
-                        25,
-                        "224953213"
-                    );
-
-INSERT INTO Trabalhador (   
-                        nif,
-                        nome,
-                        idade,
-                        numTelefone
-                    )
-                    VALUES(
-                        "119608152",
-                        "Tiago Martins Andrade",
-                        42,
-                        "224953213"
-                    );
-
-INSERT INTO Trabalhador (   
-                        nif,
-                        nome,
-                        idade,
-                        numTelefone
-                    )
-                    VALUES(
-                        "052416241",
-                        "Joana Wilson Vieira",
-                        32,
-                        "227807169"
-                    );
-
-INSERT INTO Trabalhador (   
-                        nif,
-                        nome,
-                        idade,
-                        numTelefone
-                    )
-                    VALUES(
-                        "139514911",
-                        "Artur de Melo e Silva",
-                        47,
-                        "221959546"
-                    );
-
-INSERT INTO Trabalhador (   
-                        nif,
-                        nome,
-                        idade,
-                        numTelefone
-                    )
-                    VALUES(
-                        "956978340",
-                        "Madalena de Mello Sottomayor",
-                        45,
-                        "223772211"
-                    );
-
-INSERT INTO Trabalhador (   
-                        nif,
-                        nome,
-                        idade,
-                        numTelefone
-                    )
-                    VALUES(
-                        "706598544",
-                        "Ruben Andre Ferreira",
-                        23,
-                        "227513482"
-                    );
-
-INSERT INTO Trabalhador (   
-                        nif,
-                        nome,
-                        idade,
-                        numTelefone
-                    )
-                    VALUES(
-                        "047417167",
-                        "Mariana Sousa Lopes",
-                        18,
-                        "224650740"
-                    );
-
-
-INSERT INTO Trabalhador (   
-                        nif,
-                        nome,
-                        idade,
-                        numTelefone
-                    )
-                    VALUES(
-                        "092797409",
-                        "Ana Julia Fonseca",
-                        56,
-                        "221843510"
-                    );
-
-INSERT INTO Trabalhador (   
-                        nif,
-                        nome,
-                        idade,
-                        numTelefone
-                    )
-                    VALUES(
-                        "848547067",
-                        "Tiago Mendes Saramago",
-                        42,
-                        "221322154"
-                    );
-
-INSERT INTO Trabalhador (   
-                        nif,
-                        nome,
-                        idade,
-                        numTelefone
-                    )
-                    VALUES(
-                        "601853725",
-                        "Afonso Martins Andrade",
-                        38,
-                        "226642122"
+                        'Tunes',
+                        'Largo 13 de Maio',
+                        '8365-235',
+                        'Tunes'
                     );
 
 --Table: Maquinista
 INSERT INTO Maquinista (   
-                        nifMaquinista,
+                        nif,
+                        nome,
+                        idade,
+                        numTelefone,
                         numLicensa
                     )
                     VALUES(
-                        "659387578",
-                        "406636544693"
+                        '659387578',
+                        'Afonso Martins Andrade',
+                        25,
+                        '224953213',
+                        '406636544693'
                     );
 
 INSERT INTO Maquinista (   
-                        nifMaquinista,
+                        nif,
+                        nome,
+                        idade,
+                        numTelefone,
                         numLicensa
                     )
                     VALUES(
-                        "119608152",
-                        "820439607970"
+                        '119608152',
+                        'Tiago Martins Andrade',
+                        42,
+                        '224953213',
+                        '820439607970'
                     );
 
 INSERT INTO Maquinista (   
-                        nifMaquinista,
+                        nif,
+                        nome,
+                        idade,
+                        numTelefone,
                         numLicensa
                     )
                     VALUES(
-                        "052416241",
-                        "677901396343"
+                        '052416241',
+                        'Joana Wilson Vieira',
+                        32,
+                        '227807169',
+                        '677901396343'
                     );
 
 
 --Table: Bilheteiro
 INSERT INTO Bilheteiro (   
-                        nifBilheteiro,
+                        nif,
+                        nome,
+                        idade,
+                        numTelefone,
                         nomeEstacao
                     )
                     VALUES(
-                        "139514911",
-                        "Campanha"
+                        '139514911',
+                        'Artur de Melo e Silva',
+                        47,
+                        '221959546',
+                        'Campanha'
                     );
 
 INSERT INTO Bilheteiro (   
-                        nifBilheteiro,
+                        nif,
+                        nome,
+                        idade,
+                        numTelefone,
                         nomeEstacao
                     )
                     VALUES(
-                        "956978340",
-                        "Oriente"
+                        '956978340',
+                        'Madalena de Mello Sottomayor',
+                        45,
+                        '223772211',
+                        'Oriente'
                     );
 
 
 --Table: Revisor
 INSERT INTO Revisor (   
-                        nifRevisor,
+                        nif,
+                        nome,
+                        idade,
+                        numTelefone,
                         identificacao
                     )
                     VALUES(
-                        "706598544",
-                        "095727970"
+                        '706598544',
+                        'Ruben Andre Ferreira',
+                        23,
+                        '227513482',
+                        '095727970'
                     );
 
 INSERT INTO Revisor (   
-                        nifRevisor,
+                        nif,
+                        nome,
+                        idade,
+                        numTelefone,
                         identificacao
                     )
                     VALUES(
-                        "047417167",
-                        "935945325"
+                        '047417167',
+                        'Mariana Sousa Lopes',
+                        18,
+                        '224650740',
+                        '935945325'
                     );
 
 INSERT INTO Revisor (   
-                        nifRevisor,
+                        nif,
+                        nome,
+                        idade,
+                        numTelefone,
                         identificacao
                     )
                     VALUES(
-                        "092797409",
-                        "399791515"
+                        '092797409',
+                        'Ana Julia Fonseca',
+                        56,
+                        '221843510',
+                        '399791515'
                     );
 
 INSERT INTO Revisor (   
-                        nifRevisor,
+                        nif,
+                        nome,
+                        idade,
+                        numTelefone,
                         identificacao
                     )
                     VALUES(
-                        "848547067",
-                        "570404235"
+                        '848547067',
+                        'Tiago Mendes Saramago',
+                        42,
+                        '221322154',
+                        '570404235'
                     );
 
 INSERT INTO Revisor (   
-                        nifRevisor,
+                        nif,
+                        nome,
+                        idade,
+                        numTelefone,
                         identificacao
                     )
                     VALUES(
-                        "601853725",
-                        "223091524"
-                    );
-
-
---Table: Comboio
-INSERT INTO Comboio (   
-                        marca,
-                        modelo
-                    )
-                    VALUES(
-                        "GE Transportation",
-                        "NAHX 44703"
-                    );
-
-INSERT INTO Comboio (   
-                        marca,
-                        modelo
-                    )
-                    VALUES(
-                        "GE Transportation",
-                        "NAHX 44703"
-                    );
-
-INSERT INTO Comboio (   
-                        marca,
-                        modelo
-                    )
-                    VALUES(
-                        "GE Transportation",
-                        "NAHX 44703"
-                    );
-
-INSERT INTO Comboio (   
-                        marca,
-                        modelo
-                    )
-                    VALUES(
-                        "GE Transportation",
-                        "NAHX 38781"
-                    );
-
-INSERT INTO Comboio (   
-                        marca,
-                        modelo
-                    )
-                    VALUES(
-                        "GE Transportation",
-                        "NAHX 38781"
-                    );
-
-INSERT INTO Comboio (   
-                        marca,
-                        modelo
-                    )
-                    VALUES(
-                        "Stadler",
-                        "Regio-Shuttle RS1"
-                    );
-
-INSERT INTO Comboio (   
-                        marca,
-                        modelo
-                    )
-                    VALUES(
-                        "Stadler",
-                        "FLIRT"
-                    );
-
-INSERT INTO Comboio (   
-                        marca,
-                        modelo
-                    )
-                    VALUES(
-                        "Stadler",
-                        "FLIRT"
-                    );
-
-INSERT INTO Comboio (   
-                        marca,
-                        modelo
-                    )
-                    VALUES(
-                        "Stadler",
-                        "SPATZ"
-                    );
-
-INSERT INTO Comboio (   
-                        marca,
-                        modelo
-                    )
-                    VALUES(
-                        "Korail",
-                        "ITX-Saemaul"
-                    );
-
-
-INSERT INTO Comboio (   
-                        marca,
-                        modelo
-                    )
-                    VALUES(
-                        "Korail",
-                        "ITX-Saemaul"
-                    );
-
-INSERT INTO Comboio (   
-                        marca,
-                        modelo
-                    )
-                    VALUES(
-                        "DB",
-                        "ICE 4"
-                    );
-
-
-
---Table: ComboioVelocidade
-INSERT INTO ComboioVel(   
-                        marca,
-                        modelo,
-                        velMaxima
-                    )
-                    VALUES(
-                        "GE Transportation",
-                        "NAHX 44703",
-                        103
-                    );
-
-INSERT INTO ComboioVel(   
-                        marca,
-                        modelo,
-                        velMaxima
-                    )
-                    VALUES(
-                        "GE Transportation",
-                        "NAHX 38781",
-                        97
-                    );
-
-INSERT INTO ComboioVel(   
-                        marca,
-                        modelo,
-                        velMaxima
-                    )
-                    VALUES(
-                        "Stadler",
-                        "Regio-Shuttle RS1",
-                        193
-                    );
-
-INSERT INTO ComboioVel(   
-                        marca,
-                        modelo,
-                        velMaxima
-                    )
-                    VALUES(
-                        "Stadler",
-                        "FLIRT",
-                        203
-                    );
-
-INSERT INTO ComboioVel(   
-                        marca,
-                        modelo,
-                        velMaxima
-                    )
-                    VALUES(
-                        "Stadler",
-                        "Spatz",
-                        213
-                    );
-
-INSERT INTO ComboioVel(   
-                        marca,
-                        modelo,
-                        velMaxima
-                    )
-                    VALUES(
-                        "Korail",
-                        "ITX-Saemaul",
-                        290
-                    );
-
-INSERT INTO ComboioVel(   
-                        marca,
-                        modelo,
-                        velMaxima
-                    )
-                    VALUES(
-                        "DB",
-                        "ICE 4",
-                        201
+                        '601853725',
+                        'Afonso Martins Andrade',
+                        38,
+                        '226642122',
+                        '223091524'
                     );
 
 
 --Table: ComboioCarga
-INSERT INTO ComboioCarga(   
-                        id,
-                        maxCarga
+INSERT INTO ComboioCarga (   
+                        marca,
+                        modelo
                     )
                     VALUES(
-                        1,
-                        3.3
+                        'GE Transportation',
+                        'NAHX 44703'
                     );
 
-INSERT INTO ComboioCarga(   
-                        id,
-                        maxCarga
+INSERT INTO ComboioCarga (   
+                        marca,
+                        modelo
                     )
                     VALUES(
-                        2,
-                        3.2
+                        'GE Transportation',
+                        'NAHX 44703'
                     );
 
-INSERT INTO ComboioCarga(   
-                        id,
-                        maxCarga
+INSERT INTO ComboioCarga (   
+                        marca,
+                        modelo
                     )
                     VALUES(
-                        3,
-                        3.3
+                        'GE Transportation',
+                        'NAHX 44703'
                     );
 
+INSERT INTO ComboioCarga (   
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        'GE Transportation',
+                        'NAHX 38781'
+                    );
+
+INSERT INTO ComboioCarga (   
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        'GE Transportation',
+                        'NAHX 38781'
+                    );
 
 --Table: ComboioPassageiros
-INSERT INTO ComboioPassageiros(   
-                                id,
-                                lugares
-                            )
-                            VALUES(
-                                4,
-                                120
-                            );
+INSERT INTO ComboioPassageiros (   
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        'Stadler',
+                        'Regio-Shuttle RS1'
+                    );
 
-INSERT INTO ComboioPassageiros(   
-                                id,
-                                lugares
-                            )
-                            VALUES(
-                                5,
-                                115
-                            );
+INSERT INTO ComboioPassageiros (   
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        'Stadler',
+                        'FLIRT'
+                    );
 
-INSERT INTO ComboioPassageiros(   
-                                id,
-                                lugares
-                            )
-                            VALUES(
-                                6,
-                                135
-                            );
+INSERT INTO ComboioPassageiros (   
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        'Stadler',
+                        'FLIRT'
+                    );
 
-INSERT INTO ComboioPassageiros(   
-                                id,
-                                lugares
-                            )
-                            VALUES(
-                                7,
-                                210
-                            );
+INSERT INTO ComboioPassageiros (   
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        'Stadler',
+                        'SPATZ'
+                    );
 
-INSERT INTO ComboioPassageiros(   
-                                id,
-                                lugares
-                            )
-                            VALUES(
-                                8,
-                                198
-                            );
+INSERT INTO ComboioPassageiros (   
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        'Korail',
+                        'ITX-Saemaul'
+                    );
 
-INSERT INTO ComboioPassageiros(   
-                                id,
-                                lugares
-                            )
-                            VALUES(
-                                9,
-                                140
-                            );
 
-INSERT INTO ComboioPassageiros(   
-                                id,
-                                lugares
-                            )
-                            VALUES(
-                                10,
-                                210
-                            );
+INSERT INTO ComboioPassageiros (   
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        'Korail',
+                        'ITX-Saemaul'
+                    );
 
-INSERT INTO ComboioPassageiros(   
-                                id,
-                                lugares
-                            )
-                            VALUES(
-                                11,
-                                210
-                            );
+INSERT INTO ComboioPassageiros (   
+                        marca,
+                        modelo
+                    )
+                    VALUES(
+                        'DB',
+                        'ICE 4'
+                    );
 
-INSERT INTO ComboioPassageiros(   
-                                id,
-                                lugares
-                            )
-                            VALUES(
-                                12,
-                                188
-                            );
+
+
+--Table: CargaCaracteristicas
+INSERT INTO CargaCaracteristicas(   
+                        marca,
+                        modelo,
+                        velMaxima,
+                        maxCarga
+                    )
+                    VALUES(
+                        'GE Transportation',
+                        'NAHX 44703',
+                        103,
+                        3.8
+                    );
+
+INSERT INTO CargaCaracteristicas(   
+                        marca,
+                        modelo,
+                        velMaxima,
+                        maxCarga
+                    )
+                    VALUES(
+                        'GE Transportation',
+                        'NAHX 38781',
+                        97,
+                        4.2
+                    );
+                
+--Table: PassageirosCaracteristicas
+INSERT INTO PassageirosCaracteristicas(   
+                        marca,
+                        modelo,
+                        velMaxima,
+                        lugares
+                    )
+                    VALUES(
+                        'Stadler',
+                        'Regio-Shuttle RS1',
+                        193,
+                        120
+                    );
+
+INSERT INTO PassageirosCaracteristicas(   
+                        marca,
+                        modelo,
+                        velMaxima,
+                        lugares
+                    )
+                    VALUES(
+                        'Stadler',
+                        'FLIRT',
+                        203,
+                        115
+                    );
+
+INSERT INTO PassageirosCaracteristicas(   
+                        marca,
+                        modelo,
+                        velMaxima,
+                        lugares
+                    )
+                    VALUES(
+                        'Stadler',
+                        'Spatz',
+                        213,
+                        120
+                    );
+
+INSERT INTO PassageirosCaracteristicas(   
+                        marca,
+                        modelo,
+                        velMaxima,
+                        lugares
+                    )
+                    VALUES(
+                        'Korail',
+                        'ITX-Saemaul',
+                        290,
+                        230
+                    );
+
+INSERT INTO PassageirosCaracteristicas(   
+                        marca,
+                        modelo,
+                        velMaxima,
+                        lugares
+                    )
+                    VALUES(
+                        'DB',
+                        'ICE 4',
+                        201,
+                        110
+                    );
+
 
 --Table: Rota
 INSERT INTO Rota(   
@@ -945,8 +784,8 @@ INSERT INTO Rota(
                     nomeServico
                 )
                 VALUES(
-                    "Porto/Faro",
-                    "Alfa-Pendular"
+                    'Porto/Faro',
+                    'Alfa-Pendular'
                 );
 
 INSERT INTO Rota(   
@@ -954,8 +793,8 @@ INSERT INTO Rota(
                     nomeServico
                 )
                 VALUES(
-                    "Lisboa/Porto",
-                    "Intercidades"
+                    'Lisboa/Porto',
+                    'Intercidades'
                 );
 
 INSERT INTO Rota(   
@@ -963,8 +802,8 @@ INSERT INTO Rota(
                     nomeServico
                 )
                 VALUES(
-                    "Porto/Lisboa",
-                    "Intercidades"
+                    'Porto/Lisboa',
+                    'Intercidades'
                 );
 
 INSERT INTO Rota(   
@@ -972,8 +811,8 @@ INSERT INTO Rota(
                     nomeServico
                 )
                 VALUES(
-                    "Coimbra/Aveiro",
-                    "Regional"
+                    'Coimbra/Aveiro',
+                    'Regional'
                 );
 
 INSERT INTO Rota(   
@@ -981,8 +820,8 @@ INSERT INTO Rota(
                     nomeServico
                 )
                 VALUES(
-                    "Aveiro/Coimbra",
-                    "Regional"
+                    'Aveiro/Coimbra',
+                    'Regional'
                 );
 
 INSERT INTO Rota(   
@@ -991,7 +830,16 @@ INSERT INTO Rota(
                 )
                 VALUES(
                     NULL,
-                    "Urbano"
+                    'Urbano'
+                );
+
+INSERT INTO Rota(   
+                    titulo,
+                    nomeServico
+                )
+                VALUES(
+                    NULL,
+                    'Cargas'
                 );
 
 
@@ -1002,7 +850,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Campanha",
+                    'Campanha',
                     1,
                     0
                 );
@@ -1013,7 +861,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Aveiro",
+                    'Aveiro',
                     1,
                     49
                 );
@@ -1024,7 +872,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Coimbra-B",
+                    'Coimbra-B',
                     1,
                     76
                 );
@@ -1035,7 +883,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Oriente",
+                    'Oriente',
                     1,
                     171
                 );
@@ -1046,7 +894,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Tunes",
+                    'Tunes',
                     1,
                     323
                 );
@@ -1057,7 +905,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Faro",
+                    'Faro',
                     1,
                     351
                 );
@@ -1068,7 +916,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Oriente",
+                    'Oriente',
                     2,
                     0
                 );
@@ -1079,7 +927,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Pombal",
+                    'Pombal',
                     2,
                     83
                 );
@@ -1090,7 +938,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Coimbra-B",
+                    'Coimbra-B',
                     2,
                     108
                 );
@@ -1101,7 +949,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Mealhada",
+                    'Mealhada',
                     2,
                     121
                 );
@@ -1112,7 +960,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Aveiro",
+                    'Aveiro',
                     2,
                     141
                 );
@@ -1123,7 +971,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Campanha",
+                    'Campanha',
                     2,
                     194
                 );
@@ -1134,7 +982,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Campanha",
+                    'Campanha',
                     3,
                     0
                 );
@@ -1145,7 +993,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Aveiro",
+                    'Aveiro',
                     3,
                     55
                 );
@@ -1156,7 +1004,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Mealhada",
+                    'Mealhada',
                     3,
                     72
                 );
@@ -1167,7 +1015,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Coimbra-B",
+                    'Coimbra-B',
                     3,
                     87
                 );
@@ -1178,7 +1026,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Pombal",
+                    'Pombal',
                     3,
                     112
                 );
@@ -1189,7 +1037,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Oriente",
+                    'Oriente',
                     3,
                     195
                 );
@@ -1200,7 +1048,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Coimbra",
+                    'Coimbra',
                     4,
                     0
                 );
@@ -1211,7 +1059,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Coimbra-B",
+                    'Coimbra-B',
                     4,
                     4
                 );
@@ -1222,7 +1070,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Pampilhosa",
+                    'Pampilhosa',
                     4,
                     21
                 );
@@ -1233,7 +1081,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Mealhada",
+                    'Mealhada',
                     4,
                     25
                 );
@@ -1244,7 +1092,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Oliveira do Bairro",
+                    'Oliveira do Bairro',
                     4,
                     43
                 );
@@ -1255,7 +1103,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Aveiro",
+                    'Aveiro',
                     4,
                     60
                 );
@@ -1266,7 +1114,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Aveiro",
+                    'Aveiro',
                     5,
                     0
                 );
@@ -1277,7 +1125,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Oliveira do Bairro",
+                    'Oliveira do Bairro',
                     5,
                     17
                 );
@@ -1288,7 +1136,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Mealhada",
+                    'Mealhada',
                     5,
                     35
                 );
@@ -1299,7 +1147,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Pampilhosa",
+                    'Pampilhosa',
                     5,
                     39
                 );
@@ -1310,7 +1158,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Coimbra-B",
+                    'Coimbra-B',
                     5,
                     56
                 );
@@ -1321,7 +1169,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Coimbra",
+                    'Coimbra',
                     5,
                     60
                 );
@@ -1332,7 +1180,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Coimbra",
+                    'Coimbra',
                     6,
                     0
                 );
@@ -1343,7 +1191,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Coimbra-B",
+                    'Coimbra-B',
                     6,
                     9
                 );
@@ -1354,7 +1202,7 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Formoselha",
+                    'Formoselha',
                     6,
                     34
                 );
@@ -1365,192 +1213,255 @@ INSERT INTO Informacao(
                     tempoDeChegada
                 )
                 VALUES(
-                    "Figueira da Foz",
+                    'Figueira da Foz',
                     6,
                     70
                 );
 
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    'Campanha',
+                    7,
+                    0
+                );
+
+INSERT INTO Informacao(   
+                    nomeEstacao,
+                    idRota,
+                    tempoDeChegada
+                )
+                VALUES(
+                    'Santa Apolonia',
+                    7,
+                    252
+                );
+
+
 
 --Table: Viagem
-
 INSERT INTO Viagem(   
                     dataDePartida,
                     dataDeChegada,
-                    idComboio,
+                    idComboioCarga,
+                    idComboioPassageiros,
                     idRota,
                     nifMaquinista
                 )
                 VALUES(
-                    "2021-05-10 09:30",
-                    "2021-05-10 15:21",
+                    '2021-05-10 09:30',
+                    '2021-05-10 15:21',
+                    NULL,
                     5,
                     1,
-                    "119608152"   
+                    '119608152'   
                 );
 
 INSERT INTO Viagem(   
                     dataDePartida,
                     dataDeChegada,
-                    idComboio,
+                    idComboioCarga,
+                    idComboioPassageiros,
                     idRota,
                     nifMaquinista
                 )
                 VALUES(
-                    "2021-05-10 10:30",
-                    "2021-05-10 13:44",
+                    '2021-05-10 10:30',
+                    '2021-05-10 13:44',
+                    NULL,
                     4,
                     2,
-                    "659387578"   
+                    '659387578'   
                 );
 
 INSERT INTO Viagem(   
                     dataDePartida,
                     dataDeChegada,
-                    idComboio,
+                    idComboioCarga,
+                    idComboioPassageiros,
                     idRota,
                     nifMaquinista
                 )
                 VALUES(
-                    "2021-05-11 11:30",
-                    "2021-05-11 14:45",
+                    '2021-05-11 11:30',
+                    '2021-05-11 14:45',
+                    NULL,
                     6,
                     3,
-                    "052416241"   
+                    '052416241'   
                 );
 
 INSERT INTO Viagem(   
                     dataDePartida,
                     dataDeChegada,
-                    idComboio,
+                    idComboioCarga,
+                    idComboioPassageiros,
                     idRota,
                     nifMaquinista
                 )
                 VALUES(
-                    "2021-05-11 17:30",
-                    "2021-05-11 20:45",
+                    '2021-05-11 17:30',
+                    '2021-05-11 20:45',
+                    NULL,
                     7,
                     3,
-                    "659387578"     
+                    '659387578'     
                 );
 
 INSERT INTO Viagem(   
                     dataDePartida,
                     dataDeChegada,
-                    idComboio,
+                    idComboioCarga,
+                    idComboioPassageiros,
                     idRota,
                     nifMaquinista
                 )
                 VALUES(
-                    "2021-05-12 08:30",
-                    "2021-05-12 09:30",
-                    9,
-                    4,
-                    "119608152"      
-                );
-
-INSERT INTO Viagem(   
-                    dataDePartida,
-                    dataDeChegada,
-                    idComboio,
-                    idRota,
-                    nifMaquinista
-                )
-                VALUES(
-                    "2021-05-12 15:30",
-                    "2021-05-12 16:30",
-                    9,
-                    5,
-                    "119608152"      
-                );
-
-INSERT INTO Viagem(   
-                    dataDePartida,
-                    dataDeChegada,
-                    idComboio,
-                    idRota,
-                    nifMaquinista
-                )
-                VALUES(
-                    "2021-05-15 18:00",
-                    "2021-05-15 21:15",
-                    12,
-                    3,
-                    "659387578"       
-                );
-
-INSERT INTO Viagem(   
-                    dataDePartida,
-                    dataDeChegada,
-                    idComboio,
-                    idRota,
-                    nifMaquinista
-                )
-                VALUES(
-                    "2021-06-01 10:00",
-                    "2021-06-01 15:51",
-                    11,
+                    '2021-05-12 08:30',
+                    '2021-05-12 09:30',
+                    NULL,
                     1,
-                    "052416241"        
-                );
-
-INSERT INTO Viagem(   
-                    dataDePartida,
-                    dataDeChegada,
-                    idComboio,
-                    idRota,
-                    nifMaquinista
-                )
-                VALUES(
-                    "2021-07-03 15:45",
-                    "2021-07-03 21:36",
-                    10,
-                    1,
-                    "659387578"       
-                );
-
-INSERT INTO Viagem(   
-                    dataDePartida,
-                    dataDeChegada,
-                    idComboio,
-                    idRota,
-                    nifMaquinista
-                )
-                VALUES(
-                    "2021-07-18 10:00",
-                    "2021-07-18 13:15",
-                    5,
-                    3,
-                    "052416241"        
-                );
-
-INSERT INTO Viagem(   
-                    dataDePartida,
-                    dataDeChegada,
-                    idComboio,
-                    idRota,
-                    nifMaquinista
-                )
-                VALUES(
-                    "2021-07-29 10:00",
-                    "2021-07-29 11:00",
-                    8,
                     4,
-                    "119608152"        
+                    '119608152'      
                 );
 
 INSERT INTO Viagem(   
                     dataDePartida,
                     dataDeChegada,
-                    idComboio,
+                    idComboioCarga,
+                    idComboioPassageiros,
                     idRota,
                     nifMaquinista
                 )
                 VALUES(
-                    "2021-07-29 19:30",
-                    "2021-07-29 22:44",
-                    8,
+                    '2021-05-12 15:30',
+                    '2021-05-12 16:30',
+                    NULL,
+                    1,
+                    5,
+                    '119608152'      
+                );
+
+INSERT INTO Viagem(   
+                    dataDePartida,
+                    dataDeChegada,
+                    idComboioCarga,
+                    idComboioPassageiros,
+                    idRota,
+                    nifMaquinista
+                )
+                VALUES(
+                    '2021-05-15 18:00',
+                    '2021-05-15 21:15',
+                    NULL,
+                    4,
+                    3,
+                    '659387578'       
+                );
+
+INSERT INTO Viagem(   
+                    dataDePartida,
+                    dataDeChegada,
+                    idComboioCarga,
+                    idComboioPassageiros,
+                    idRota,
+                    nifMaquinista
+                )
+                VALUES(
+                    '2021-06-01 10:00',
+                    '2021-06-01 15:51',
+                    NULL,
+                    3,
+                    1,
+                    '052416241'        
+                );
+
+INSERT INTO Viagem(   
+                    dataDePartida,
+                    dataDeChegada,
+                    idComboioCarga,
+                    idComboioPassageiros,
+                    idRota,
+                    nifMaquinista
+                )
+                VALUES(
+                    '2021-07-03 15:45',
+                    '2021-07-03 21:36',
+                    NULL,
                     2,
-                    "052416241"        
+                    1,
+                    '659387578'       
+                );
+
+INSERT INTO Viagem(   
+                    dataDePartida,
+                    dataDeChegada,
+                    idComboioCarga,
+                    idComboioPassageiros,
+                    idRota,
+                    nifMaquinista
+                )
+                VALUES(
+                    '2021-07-18 10:00',
+                    '2021-07-18 13:15',
+                    NULL,
+                    5,
+                    3,
+                    '052416241'        
+                );
+
+INSERT INTO Viagem(   
+                    dataDePartida,
+                    dataDeChegada,
+                    idComboioCarga,
+                    idComboioPassageiros,
+                    idRota,
+                    nifMaquinista
+                )
+                VALUES(
+                    '2021-07-29 10:00',
+                    '2021-07-29 11:00',
+                    NULL,
+                    7,
+                    4,
+                    '119608152'        
+                );
+
+INSERT INTO Viagem(   
+                    dataDePartida,
+                    dataDeChegada,
+                    idComboioCarga,
+                    idComboioPassageiros,
+                    idRota,
+                    nifMaquinista
+                )
+                VALUES(
+                    '2021-07-29 19:30',
+                    '2021-07-29 22:44',
+                    NULL,
+                    3,
+                    2,
+                    '052416241'        
+                );
+
+INSERT INTO Viagem(   
+                    dataDePartida,
+                    dataDeChegada,
+                    idComboioCarga,
+                    idComboioPassageiros,
+                    idRota,
+                    nifMaquinista
+                )
+                VALUES(
+                    '2021-07-31 07:52',
+                    '2021-07-31 12:04',
+                    2,
+                    NULL,
+                    7,
+                    '052416241'        
                 );
 
 
@@ -1564,12 +1475,29 @@ INSERT INTO Bilhete(
                     nifBilheteiro
                 )
                 VALUES(
-                    "43",
-                    "131199282",
-                    "Campanha",
-                    "Tunes",
+                    '43A',
+                    '131199282',
+                    'Campanha',
+                    'Tunes',
                     1,
-                    "139514911"
+                    '139514911'
+                );
+
+INSERT INTO Bilhete(   
+                    lugarDestinado,
+                    nifCliente,
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    nifBilheteiro
+                )
+                VALUES(
+                    '45B',
+                    '766573459',
+                    'Campanha',
+                    'Tunes',
+                    1,
+                    '139514911'
                 );
 
 
@@ -1582,12 +1510,12 @@ INSERT INTO Bilhete(
                     nifBilheteiro
                 )
                 VALUES(
-                    "19",
-                    "773734252",
-                    "Campanha",
-                    "Tunes",
+                    '19A',
+                    '773734252',
+                    'Campanha',
+                    'Tunes',
                     1,
-                    "139514911"
+                    '139514911'
                 );
 
 INSERT INTO Bilhete(   
@@ -1599,12 +1527,12 @@ INSERT INTO Bilhete(
                     nifBilheteiro
                 )
                 VALUES(
-                    "38",
-                    "545580961",
-                    "Campanha",
-                    "Tunes",
+                    '38A',
+                    '545580961',
+                    'Campanha',
+                    'Tunes',
                     1,
-                    "139514911"
+                    '139514911'
                 );
 
 INSERT INTO Bilhete(   
@@ -1616,12 +1544,12 @@ INSERT INTO Bilhete(
                     nifBilheteiro
                 )
                 VALUES(
-                    "08",
-                    "115299474",
-                    "Oriente",
-                    "Campanha",
+                    '08C',
+                    '115299474',
+                    'Oriente',
+                    'Campanha',
                     2,
-                    "956978340"
+                    '956978340'
                 );
 
 INSERT INTO Bilhete(   
@@ -1633,12 +1561,12 @@ INSERT INTO Bilhete(
                     nifBilheteiro
                 )
                 VALUES(
-                    "65",
-                    "570208196",
-                    "Oriente",
-                    "Campanha",
+                    '65A',
+                    '570208196',
+                    'Oriente',
+                    'Campanha',
                     2,
-                    "956978340"
+                    '956978340'
                 );                
 
 INSERT INTO Bilhete(   
@@ -1650,15 +1578,13 @@ INSERT INTO Bilhete(
                     nifBilheteiro
                 )
                 VALUES(
-                    "75",
-                    "834419570",
-                    "Campanha",
-                    "Oriente",
+                    '75B',
+                    '834419570',
+                    'Campanha',
+                    'Oriente',
                     3,
-                    "139514911"
+                    '139514911'
                 );
-
-
 
 INSERT INTO Bilhete(   
                     lugarDestinado,
@@ -1669,10 +1595,27 @@ INSERT INTO Bilhete(
                     nifBilheteiro
                 )
                 VALUES(
-                    "101",
-                    "025456613",
-                    "Aveiro",
-                    "Coimbra-B",
+                    '75B',
+                    '623677721',
+                    'Campanha',
+                    'Oriente',
+                    3,
+                    '139514911'
+                );
+
+INSERT INTO Bilhete(   
+                    lugarDestinado,
+                    nifCliente,
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    nifBilheteiro
+                )
+                VALUES(
+                    '23A',
+                    '025456613',
+                    'Aveiro',
+                    'Coimbra-B',
                     6,
                     NULL
                 );
@@ -1686,10 +1629,61 @@ INSERT INTO Bilhete(
                     nifBilheteiro
                 )
                 VALUES(
-                    "102",
-                    "798467573",
-                    "Aveiro",
-                    "Coimbra-B",
+                    '23B',
+                    '766573459',
+                    'Aveiro',
+                    'Coimbra-B',
+                    6,
+                    NULL
+                );
+
+INSERT INTO Bilhete(   
+                    lugarDestinado,
+                    nifCliente,
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    nifBilheteiro
+                )
+                VALUES(
+                    '02A',
+                    '766573459',
+                    'Aveiro',
+                    'Coimbra-B',
+                    6,
+                    NULL
+                );
+
+INSERT INTO Bilhete(   
+                    lugarDestinado,
+                    nifCliente,
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    nifBilheteiro
+                )
+                VALUES(
+                    '15C',
+                    '131199282',
+                    'Aveiro',
+                    'Coimbra-B',
+                    6,
+                    NULL
+                );
+
+INSERT INTO Bilhete(   
+                    lugarDestinado,
+                    nifCliente,
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    nifBilheteiro
+                )
+                VALUES(
+                    '33C',
+                    '798467573',
+                    'Aveiro',
+                    'Coimbra-B',
                     6,
                     NULL
                 );
@@ -1703,8 +1697,8 @@ INSERT INTO BilhetePreco(
                     preco
                 )
                 VALUES(
-                    "Campanha",
-                    "Tunes",
+                    'Campanha',
+                    'Tunes',
                     1,
                     30.0
                 );
@@ -1716,8 +1710,8 @@ INSERT INTO BilhetePreco(
                     preco
                 )
                 VALUES(
-                    "Oriente",
-                    "Campanha",
+                    'Oriente',
+                    'Campanha',
                     2,
                     15.50
                 );
@@ -1730,8 +1724,8 @@ INSERT INTO BilhetePreco(
                     preco
                 )
                 VALUES(
-                    "Campanha",
-                    "Oriente",
+                    'Campanha',
+                    'Oriente',
                     3,
                     15.50
                 );
@@ -1743,22 +1737,21 @@ INSERT INTO BilhetePreco(
                     preco
                 )
                 VALUES(
-                    "Aveiro",
-                    "Coimbra-B",
+                    'Aveiro',
+                    'Coimbra-B',
                     6,
                     10.30
                 );
 
 -- Table : Assinatura
-
 INSERT INTO Assinatura(
                     nif,
                     nomeServico,
                     IDPasse
                 )
                 VALUES(
-                    "617323133",
-                    "Alfa-Pendular",
+                    '617323133',
+                    'Alfa-Pendular',
                     987123
                 );
 
@@ -1768,8 +1761,19 @@ INSERT INTO Assinatura(
                     IDPasse
                 )
                 VALUES(
-                    "456702207",
-                    "Regional",
+                    '623677721',
+                    'Alfa-Pendular',
+                    987124
+                );
+
+INSERT INTO Assinatura(
+                    nif,
+                    nomeServico,
+                    IDPasse
+                )
+                VALUES(
+                    '456702207',
+                    'Regional',
                     852741
                 );
 
@@ -1779,19 +1783,106 @@ INSERT INTO Assinatura(
                     IDPasse
                 )
                 VALUES(
-                    "156703269",
-                    "Intercidades",
+                    '156703269',
+                    'Intercidades',
                     963321
                 );
 
+INSERT INTO Assinatura(
+                    nif,
+                    nomeServico,
+                    IDPasse
+                )
+                VALUES(
+                    '623677721',
+                    'Intercidades',
+                    125212
+                );
+
+INSERT INTO Assinatura(
+                    nif,
+                    nomeServico,
+                    IDPasse
+                )
+                VALUES(
+                    '773734252',
+                    'Urbano',
+                    723212
+                );
+
+INSERT INTO Assinatura(
+                    nif,
+                    nomeServico,
+                    IDPasse
+                )
+                VALUES(
+                    '777374837',
+                    'Urbano',
+                    223212
+                );
+
+INSERT INTO Assinatura(
+                    nif,
+                    nomeServico,
+                    IDPasse
+                )
+                VALUES(
+                    '156703269',
+                    'Urbano',
+                    125212
+                );
+
+INSERT INTO Assinatura(
+                    nif,
+                    nomeServico,
+                    IDPasse
+                )
+                VALUES(
+                    '115299474',
+                    'Urbano',
+                    123252
+                );
+
+INSERT INTO Assinatura(
+                    nif,
+                    nomeServico,
+                    IDPasse
+                )
+                VALUES(
+                    '881739114',
+                    'Urbano',
+                    123214
+                );
+
+INSERT INTO Assinatura(
+                    nif,
+                    nomeServico,
+                    IDPasse
+                )
+                VALUES(
+                    '570208196',
+                    'Urbano',
+                    123211
+                );
+
+INSERT INTO Assinatura(
+                    nif,
+                    nomeServico,
+                    IDPasse
+                )
+                VALUES(
+                    '459032296',
+                    'Urbano',
+                    123213
+                );
+
 -- Table : RevisorViagem
-
 INSERT INTO RevisorViagem(
                     nifRevisor,
                     idViagem
                 )
                 VALUES(
-                    "706598544",
+                    '706598544',
                     1
                 );
 
@@ -1801,7 +1892,7 @@ INSERT INTO RevisorViagem(
                     idViagem
                 )
                 VALUES(
-                    "848547067",
+                    '848547067',
                     1
                 );
 
@@ -1810,7 +1901,7 @@ INSERT INTO RevisorViagem(
                     idViagem
                 )
                 VALUES(
-                    "601853725",
+                    '601853725',
                     2
                 );
 
@@ -1819,7 +1910,7 @@ INSERT INTO RevisorViagem(
                     idViagem
                 )
                 VALUES(
-                    "601853725",
+                    '601853725',
                     3
                 );
                 
@@ -1828,7 +1919,7 @@ INSERT INTO RevisorViagem(
                     idViagem
                 )
                 VALUES(
-                    "092797409",
+                    '092797409',
                     4
                 );
 
@@ -1837,7 +1928,16 @@ INSERT INTO RevisorViagem(
                     idViagem
                 )
                 VALUES(
-                    "848547067",
+                    '848547067',
+                    4
+                );
+
+INSERT INTO RevisorViagem(
+                    nifRevisor,
+                    idViagem
+                )
+                VALUES(
+                    '601853725',
                     4
                 );
                 
@@ -1846,7 +1946,7 @@ INSERT INTO RevisorViagem(
                     idViagem
                 )
                 VALUES(
-                    "047417167",
+                    '047417167',
                     5
                 );
                 
@@ -1855,7 +1955,7 @@ INSERT INTO RevisorViagem(
                     idViagem
                 )
                 VALUES(
-                    "092797409",
+                    '092797409',
                     6
                 );
                 
@@ -1864,7 +1964,16 @@ INSERT INTO RevisorViagem(
                     idViagem
                 )
                 VALUES(
-                    "047417167",
+                    '047417167',
+                    6
+                );
+
+INSERT INTO RevisorViagem(
+                    nifRevisor,
+                    idViagem
+                )
+                VALUES(
+                    '047417167',
                     7
                 );
                 
@@ -1873,7 +1982,7 @@ INSERT INTO RevisorViagem(
                     idViagem
                 )
                 VALUES(
-                    "706598544",
+                    '706598544',
                     8
                 );
 
