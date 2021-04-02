@@ -92,6 +92,7 @@ CREATE TABLE Maquinista(
                         CONSTRAINT nn_maquinista_idade NOT NULL,
     numTelefone TEXT    CONSTRAINT ck_maquinista_numTelefone CHECK(numTelefone LIKE '22_______' AND numTelefone NOT GLOB '*[^0-9]*'),
     numLicensa  TEXT    CONSTRAINT ck_maquinista_numLicensa CHECK(LENGTH(numLicensa) == 12 AND numLicensa NOT GLOB '*[^0-9]*')
+                        CONSTRAINT uq_maquinista_numLicensa UNIQUE
                         CONSTRAINT nn_maquinista_numLicensa NOT NULL
 );
 
@@ -117,6 +118,7 @@ CREATE TABLE Revisor(
                           CONSTRAINT nn_revisor_idade NOT NULL,
     numTelefone   TEXT    CONSTRAINT ck_revisor_numTelefone CHECK(numTelefone LIKE '22_______' AND numTelefone NOT GLOB '*[^0-9]*'),                                                            
     identificacao TEXT    CONSTRAINT ck_revisor_identificacao CHECK(LENGTH(identificacao) == 9 AND identificacao NOT GLOB '*[^0-9]*')
+                          CONSTRAINT uq_identificacao_revisor UNIQUE
                           CONSTRAINT nn_revisor_identificacao NOT NULL
 );
 
