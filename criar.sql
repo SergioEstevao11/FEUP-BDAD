@@ -79,7 +79,8 @@ CREATE TABLE Informacao(
                            CONSTRAINT nn_informacao_idRota NOT NULL,
     tempoDeChegada INTEGER CONSTRAINT ck_informacao_tempoDeChegada CHECK(tempoDeChegada >= 0)
                            CONSTRAINT nn_informacao_tempoDeChegada NOT NULL,
-    PRIMARY KEY(nomeEstacao, idRota)
+    PRIMARY KEY(nomeEstacao, idRota),
+    CONSTRAINT uq_informacao_idRota_tempoDeChegada UNIQUE(idRota, tempoDeChegada)
 );
 
 CREATE TABLE Maquinista(
