@@ -30,11 +30,11 @@ CREATE TABLE Cliente(
 
 CREATE TABLE Servico(
     nome TEXT   PRIMARY KEY   
-                CONSTRAINT ck_servico_nome CHECK(( nome == 'Alfa-Pendular' OR
-                                                   nome == 'Intercidades'  OR
-                                                   nome == 'Regional'      OR
-                                                   nome == 'Urbano'        OR
-                                                   nome == 'Cargas'        ))
+                CONSTRAINT ck_servico_nome CHECK(nome in('Alfa-Pendular',
+                                                        'Intercidades',
+                                                        'Regional',
+                                                        'Urbano',
+                                                        'Cargas'))
                 CONSTRAINT nn_servico_nome NOT NULL
 );
 
@@ -61,7 +61,7 @@ CREATE TABLE Estacao(
     CONSTRAINT uq_estacao_morada_codigoPostal UNIQUE(morada, codigoPostal)
 );
 
-CREATE TABLE Rota(
+CREATE TABLE Rota( --Didn't decide yet
     id          INTEGER PRIMARY KEY AUTOINCREMENT
                         CONSTRAINT nn_rota_id NOT NULL,
     titulo      TEXT,
@@ -70,7 +70,7 @@ CREATE TABLE Rota(
                         CONSTRAINT nn_rota_nomeServico NOT NULL
 );
 
-CREATE TABLE Informacao(
+CREATE TABLE Informacao( --ok
     nomeEstacao    TEXT    CONSTRAINT fk_informacao_estacao REFERENCES Estacao ON DELETE CASCADE 
                                                                                ON UPDATE CASCADE
                            CONSTRAINT nn_informacao_nomeEstacao NOT NULL,
@@ -96,7 +96,7 @@ CREATE TABLE Maquinista(
                         CONSTRAINT nn_maquinista_numLicensa NOT NULL
 );
 
-CREATE TABLE Bilheteiro(
+CREATE TABLE Bilheteiro(-- ok
     nif         TEXT    PRIMARY KEY 
                         CONSTRAINT ck_bilheteiro_nif CHECK(LENGTH(nif) == 9 AND nif NOT GLOB '*[^0-9]*')
                         CONSTRAINT nn_bilheteiro_nif NOT NULL,
@@ -104,7 +104,12 @@ CREATE TABLE Bilheteiro(
     idade       INTEGER CONSTRAINT ck_bilheteiro_idade CHECK(idade >= 18)
                         CONSTRAINT nn_bilheteiro_idade NOT NULL,
     numTelefone TEXT    CONSTRAINT ck_bilheteiro_numTelefone CHECK(numTelefone LIKE '22_______' AND numTelefone NOT GLOB '*[^0-9]*'),
-    nomeEstacao TEXT    CONSTRAINT fk_bilheteiro_estacao REFERENCES Estacao ON DELETE CASCADE 
+    
+    numLicensa  TEXT    CONSTRAINT ck_bilheteiro_numLicensa CHECK(LENGTH(numLicensa) == 12 AND numLicensa NOT GLOB '*[^0-9]*')
+                        CONSTRAINT uq_bilheteiro_numLicensa UNIQUE
+                        CONSTRAINT nn_bilheteiro_numLicensa NOT NULL 
+
+    nomeEstacao TEXT    CONSTRAINT fk_bilheteiro_estacao REFERENCES Estacao ON DELETE SET NULL 
                                                                             ON UPDATE CASCADE
                         CONSTRAINT nn_bilheteiro_nomeEstacao NOT NULL
 );
@@ -159,26 +164,26 @@ CREATE TABLE PassageirosCaracteristicas(
 );
 
 
-CREATE TABLE Viagem(
+CREATE TABLE Viagem(--ok
     id                   INTEGER PRIMARY KEY AUTOINCREMENT
                                  CONSTRAINT nn_viagem_id NOT NULL,
     dataDePartida        DATE    CONSTRAINT nn_viagem_id NOT NULL,
     dataDeChegada        DATE    CONSTRAINT nn_viagem_id NOT NULL,
-    idComboioCarga       INTEGER CONSTRAINT fk_viagem_comboio REFERENCES ComboioCarga ON DELETE CASCADE 
+    idComboioCarga       INTEGER CONSTRAINT fk_viagem_comboio REFERENCES ComboioCarga ON DELETE SET NULL 
                                                                                       ON UPDATE CASCADE,
-    idComboioPassageiros INTEGER CONSTRAINT fk_viagem_comboio REFERENCES ComboioPassageiros ON DELETE CASCADE 
+    idComboioPassageiros INTEGER CONSTRAINT fk_viagem_comboio REFERENCES ComboioPassageiros ON DELETE SET NULL 
                                                                                             ON UPDATE CASCADE,
-    idRota               INTEGER CONSTRAINT fk_viagem_rota REFERENCES Rota ON DELETE CASCADE 
+    idRota               INTEGER CONSTRAINT fk_viagem_rota REFERENCES Rota ON DELETE CASCADE
                                                                            ON UPDATE CASCADE
                                  CONSTRAINT nn_viagem_idRota NOT NULL,
-    nifMaquinista        TEXT    REFERENCES Maquinista ON DELETE CASCADE 
-                                                 ON UPDATE CASCADE
+    nifMaquinista        TEXT    REFERENCES Maquinista ON DELETE SET NULL
+                                                       ON UPDATE CASCADE
                                  CONSTRAINT nn_viagem_id NOT NULL,     
     CONSTRAINT uq_viagem_dataDePartida_idRota UNIQUE(dataDePartida,idRota),
     CONSTRAINT ck_viagem_idComboioCarga_idComboioPassageiros CHECK((idComboioCarga IS NULL) <> (idComboioPassageiros IS NULL))
 );
 
-CREATE TABLE RevisorViagem(
+CREATE TABLE RevisorViagem(--ok
     nifRevisor TEXT    CONSTRAINT fk_revisorViagem_revisor REFERENCES Revisor ON DELETE CASCADE 
                                                                               ON UPDATE CASCADE
                        CONSTRAINT nn_revisorViagem_nifRevisor NOT NULL,
@@ -188,33 +193,33 @@ CREATE TABLE RevisorViagem(
     PRIMARY KEY(nifRevisor, idViagem)
 );
 
-CREATE TABLE Bilhete(
+CREATE TABLE Bilhete(--ok
     id                 INTEGER PRIMARY KEY AUTOINCREMENT
                                CONSTRAINT nn_bilhete_id NOT NULL,
     lugarDestinado     TEXT,
-    nifCliente         TEXT    CONSTRAINT fk_bilhete_cliente REFERENCES Cliente ON DELETE CASCADE 
+    nifCliente         TEXT    CONSTRAINT fk_bilhete_cliente REFERENCES Cliente ON DELETE SET NULL 
                                                                                 ON UPDATE CASCADE
                                CONSTRAINT nn_bilhete_nifCliente NOT NULL,
-    nomeEstacaoPartida TEXT    CONSTRAINT fk_bilhete_estacao REFERENCES Estacao ON DELETE CASCADE 
+    nomeEstacaoPartida TEXT    CONSTRAINT fk_bilhete_estacao REFERENCES Estacao ON DELETE SET NULL 
                                                                                 ON UPDATE CASCADE
                                CONSTRAINT nn_bilhete_nomeEstacaoPartida NOT NULL,
-    nomeEstacaoChegada TEXT    CONSTRAINT fk_bilhete_estacao REFERENCES Estacao ON DELETE CASCADE 
+    nomeEstacaoChegada TEXT    CONSTRAINT fk_bilhete_estacao REFERENCES Estacao ON DELETE SET NULL 
                                                                                 ON UPDATE CASCADE
                                CONSTRAINT nn_bilhete_nomeEstacaoChegada NOT NULL,
-    idViagem           INTEGER CONSTRAINT fk_bilhete_viagem REFERENCES Viagem  ON DELETE CASCADE 
+    idViagem           INTEGER CONSTRAINT fk_bilhete_viagem REFERENCES Viagem  ON DELETE CASCADE
                                                                                ON UPDATE CASCADE
                                CONSTRAINT nn_bilhete_idViagem NOT NULL,
-    nifBilheteiro      INTEGER CONSTRAINT fk_bilhete_bilheteiro REFERENCES Bilheteiro ON DELETE CASCADE 
+    nifBilheteiro      INTEGER CONSTRAINT fk_bilhete_bilheteiro REFERENCES Bilheteiro ON DELETE SET NULL 
                                                                                       ON UPDATE CASCADE,
     CONSTRAINT ck_bilhete_nomeEstacaoPartida_nomeEstacaoChegada CHECK(nomeEstacaoChegada != nomeEstacaoPartida)
 );
 
 
 CREATE TABLE BilhetePreco(
-    nomeEstacaoPartida TEXT    CONSTRAINT fk_bilhetePreco_estacao REFERENCES Estacao ON DELETE CASCADE 
+    nomeEstacaoPartida TEXT    CONSTRAINT fk_bilhetePreco_estacao REFERENCES Estacao ON DELETE SET NULL 
                                                                                      ON UPDATE CASCADE
                                CONSTRAINT nn_bilhetePreco_nomeEstacaoPartida NOT NULL,
-    nomeEstacaoChegada TEXT    CONSTRAINT fk_bilhetePreco_estacao REFERENCES Estacao ON DELETE CASCADE 
+    nomeEstacaoChegada TEXT    CONSTRAINT fk_bilhetePreco_estacao REFERENCES Estacao ON DELETE SET NULL 
                                                                                      ON UPDATE CASCADE
                                CONSTRAINT nn_bilhetePreco_nomeEstacaoChegada NOT NULL,
     idViagem           INTEGER CONSTRAINT fk_bilhetePreco_viagem REFERENCES Viagem  ON DELETE CASCADE 

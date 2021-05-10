@@ -468,6 +468,7 @@ INSERT INTO Bilheteiro (
                         nome,
                         idade,
                         numTelefone,
+                        numLicensa,
                         nomeEstacao
                     )
                     VALUES(
@@ -475,6 +476,7 @@ INSERT INTO Bilheteiro (
                         'Artur de Melo e Silva',
                         47,
                         '221959546',
+                        '678098123555',
                         'Campanha'
                     );
 
@@ -483,6 +485,7 @@ INSERT INTO Bilheteiro (
                         nome,
                         idade,
                         numTelefone,
+                        numLicensa,
                         nomeEstacao
                     )
                     VALUES(
@@ -490,6 +493,7 @@ INSERT INTO Bilheteiro (
                         'Madalena de Mello Sottomayor',
                         45,
                         '223772211',
+                        '890984567000',
                         'Oriente'
                     );
 
