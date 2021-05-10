@@ -107,7 +107,7 @@ CREATE TABLE Bilheteiro(-- ok
     
     numLicensa  TEXT    CONSTRAINT ck_bilheteiro_numLicensa CHECK(LENGTH(numLicensa) == 12 AND numLicensa NOT GLOB '*[^0-9]*')
                         CONSTRAINT uq_bilheteiro_numLicensa UNIQUE
-                        CONSTRAINT nn_bilheteiro_numLicensa NOT NULL 
+                        CONSTRAINT nn_bilheteiro_numLicensa NOT NULL, 
 
     nomeEstacao TEXT    CONSTRAINT fk_bilheteiro_estacao REFERENCES Estacao ON DELETE SET NULL 
                                                                             ON UPDATE CASCADE
