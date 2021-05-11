@@ -16,10 +16,12 @@ DROP TABLE IF EXISTS Estacao;
 DROP TABLE IF EXISTS Maquinista;
 DROP TABLE IF EXISTS Revisor;
 DROP TABLE IF EXISTS Bilheteiro;
-DROP TABLE IF EXISTS ComboioCarga;
-DROP TABLE IF EXISTS ComboioPassageiros;
-DROP TABLE IF EXISTS PassageirosCaracteristicas;
-DROP TABLE IF EXISTS CargaCaracteristicas;
+DROP TABLE IF EXISTS Comboio;
+DROP TABLE IF EXISTS ComboioCaracteristicas;
+--DROP TABLE IF EXISTS ComboioCarga;
+--DROP TABLE IF EXISTS ComboioPassageiros;
+-- DROP TABLE IF EXISTS PassageirosCaracteristicas;
+-- DROP TABLE IF EXISTS CargaCaracteristicas;
 
 CREATE TABLE Cliente(
     nif  TEXT   PRIMARY KEY    
@@ -127,40 +129,28 @@ CREATE TABLE Revisor(
                           CONSTRAINT nn_revisor_identificacao NOT NULL
 );
 
-CREATE TABLE ComboioCarga(
+CREATE TABLE Comboio(
     id       INTEGER PRIMARY KEY AUTOINCREMENT
                      CONSTRAINT nn_comboioCarga_id NOT NULL,
-    marca    TEXT    CONSTRAINT nn_comboioCarga_marca NOT NULL,
-    modelo   TEXT    CONSTRAINT nn_comboioCarga_modelo NOT NULL  
-                     CONSTRAINT nn_comboioCarga_id NOT NULL                                                                  
+    marcaC    TEXT    CONSTRAINT nn_comboioCarga_marca NOT NULL,
+    modeloC   TEXT    CONSTRAINT nn_comboioCarga_modelo NOT NULL,
+    FOREIGN KEY(marcaC, modeloC) REFERENCES ComboioCaracteristicas(marca, modelo) ON DELETE CASCADE
+                                                                                  ON UPDATE CASCADE
+                                                                                                                  
 );
 
-CREATE TABLE CargaCaracteristicas(
+
+CREATE TABLE ComboioCaracteristicas(
     marca     TEXT    CONSTRAINT nn_comboioCarga_marca NOT NULL,
     modelo    TEXT    CONSTRAINT nn_comboioCarga_modelo NOT NULL,
-    velMaxima INTEGER CONSTRAINT ck_comboioCarga_velMaxima CHECK (velMaxima > 0)
+    velMaxima INTEGER 
+                    CONSTRAINT ck_comboioCarga_velMaxima CHECK (velMaxima > 0)
                       CONSTRAINT nn_comboioCarga_velMaxima NOT NULL,
-    maxCarga  FLOAT   CONSTRAINT ck_comboioCarga_maxCarga CHECK (maxCarga > 0 AND maxCarga < 5)
-                      CONSTRAINT nn_comboioCarga_maxCarga NOT NULL,
-    PRIMARY KEY(marca,modelo)
-);
+    maxCarga  FLOAT   CONSTRAINT ck_comboioCarga_maxCarga CHECK ((maxCarga > 0 AND maxCarga < 5) OR maxCarga IS NULL),
 
-CREATE TABLE ComboioPassageiros(
-    id       INTEGER PRIMARY KEY AUTOINCREMENT
-                     CONSTRAINT nn_comboioPassageiros_id NOT NULL,
-    marca    TEXT    CONSTRAINT nn_comboioPassageiros_marca NOT NULL,
-    modelo   TEXT    CONSTRAINT nn_comboioPassageiros_modelo NOT NULL  
-                     CONSTRAINT nn_comboioPassageiros_id NOT NULL
-);
-
-CREATE TABLE PassageirosCaracteristicas(
-    marca     TEXT    CONSTRAINT nn_passageirosCaracteristicas_marca NOT NULL,
-    modelo    TEXT    CONSTRAINT nn_passageirosCaracteristicas_modelo NOT NULL,
-    velMaxima INTEGER CONSTRAINT ck_passageirosCaracteristicas_velMaxima CHECK (velMaxima > 0)
-                      CONSTRAINT nn_passageirosCaracteristicas_velMaxima NOT NULL,
-    lugares   INTEGER CONSTRAINT ck_passageirosCaracteristicas_lugares CHECK (lugares > 0)
-                      CONSTRAINT nn_passageirosCaracteristicas_lugares NOT NULL,
-    PRIMARY KEY(marca,modelo)
+    lugares   INTEGER CONSTRAINT ck_passageirosCaracteristicas_lugares CHECK (lugares > 0 OR lugares IS NULL),
+    PRIMARY KEY(marca,modelo),
+    CONSTRAINT ck_MaxCarga_lugares CHECK((maxCarga IS NULL) OR (lugares IS NULL)) 
 );
 
 
@@ -169,18 +159,15 @@ CREATE TABLE Viagem(--ok
                                  CONSTRAINT nn_viagem_id NOT NULL,
     dataDePartida        DATE    CONSTRAINT nn_viagem_id NOT NULL,
     dataDeChegada        DATE    CONSTRAINT nn_viagem_id NOT NULL,
-    idComboioCarga       INTEGER CONSTRAINT fk_viagem_comboio REFERENCES ComboioCarga ON DELETE SET NULL 
-                                                                                      ON UPDATE CASCADE,
-    idComboioPassageiros INTEGER CONSTRAINT fk_viagem_comboio REFERENCES ComboioPassageiros ON DELETE SET NULL 
-                                                                                            ON UPDATE CASCADE,
+    idComboio            INTEGER CONSTRAINT fk_viagem_comboio REFERENCES Comboio ON DELETE SET NULL 
+                                                                                 ON UPDATE CASCADE,
     idRota               INTEGER CONSTRAINT fk_viagem_rota REFERENCES Rota ON DELETE CASCADE
                                                                            ON UPDATE CASCADE
                                  CONSTRAINT nn_viagem_idRota NOT NULL,
     nifMaquinista        TEXT    REFERENCES Maquinista ON DELETE SET NULL
                                                        ON UPDATE CASCADE
                                  CONSTRAINT nn_viagem_id NOT NULL,     
-    CONSTRAINT uq_viagem_dataDePartida_idRota UNIQUE(dataDePartida,idRota),
-    CONSTRAINT ck_viagem_idComboioCarga_idComboioPassageiros CHECK((idComboioCarga IS NULL) <> (idComboioPassageiros IS NULL))
+    CONSTRAINT uq_viagem_dataDePartida_idRota UNIQUE(dataDePartida,idRota)
 );
 
 CREATE TABLE RevisorViagem(--ok

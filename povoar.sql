@@ -575,46 +575,153 @@ INSERT INTO Revisor (
                     );
 
 
---Table: ComboioCarga
-INSERT INTO ComboioCarga (   
+--Table: CargaCaracteristicas
+INSERT INTO ComboioCaracteristicas(   
                         marca,
-                        modelo
+                        modelo,
+                        velMaxima,
+                        maxCarga,
+                        lugares
+                    )
+                    VALUES(
+                        'GE Transportation',
+                        'NAHX 44703',
+                        103,
+                        3.8,
+                        null
+                    );
+
+INSERT INTO ComboioCaracteristicas(   
+                        marca,
+                        modelo,
+                        velMaxima,
+                        maxCarga,
+                        lugares
+                    )
+                    VALUES(
+                        'GE Transportation',
+                        'NAHX 38781',
+                        97,
+                        4.2,
+                        null
+                    );
+                
+--Table: PassageirosCaracteristicas
+INSERT INTO ComboioCaracteristicas(   
+                        marca,
+                        modelo,
+                        velMaxima,
+                        maxCarga,
+                        lugares
+                    )
+                    VALUES(
+                        'Stadler',
+                        'Regio-Shuttle RS1',
+                        193,
+                        null,
+                        120
+                    );
+
+INSERT INTO ComboioCaracteristicas(   
+                        marca,
+                        modelo,
+                        velMaxima,
+                        maxCarga,
+                        lugares
+                    )
+                    VALUES(
+                        'Stadler',
+                        'FLIRT',
+                        203,
+                        null,
+                        115
+                    );
+
+INSERT INTO ComboioCaracteristicas(   
+                        marca,
+                        modelo,
+                        velMaxima,
+                        maxCarga,
+                        lugares
+                    )
+                    VALUES(
+                        'Stadler',
+                        'SPATZ',
+                        213,
+                        null,
+                        120
+                    );
+
+INSERT INTO ComboioCaracteristicas(   
+                        marca,
+                        modelo,
+                        velMaxima,
+                        maxCarga,
+                        lugares
+                    )
+                    VALUES(
+                        'Korail',
+                        'ITX-Saemaul',
+                        290,
+                        null,
+                        230
+                    );
+
+INSERT INTO ComboioCaracteristicas(   
+                        marca,
+                        modelo,
+                        velMaxima,
+                        maxCarga,
+                        lugares
+                    )
+                    VALUES(
+                        'DB',
+                        'ICE 4',
+                        201,
+                        null,
+                        110
+                    );
+
+--Table: Comboio
+INSERT INTO Comboio (   
+                        marcaC,
+                        modeloC
                     )
                     VALUES(
                         'GE Transportation',
                         'NAHX 44703'
                     );
 
-INSERT INTO ComboioCarga (   
-                        marca,
-                        modelo
+INSERT INTO Comboio (   
+                        marcaC,
+                        modeloC
                     )
                     VALUES(
                         'GE Transportation',
                         'NAHX 44703'
                     );
 
-INSERT INTO ComboioCarga (   
-                        marca,
-                        modelo
+INSERT INTO Comboio (   
+                        marcaC,
+                        modeloC
                     )
                     VALUES(
                         'GE Transportation',
                         'NAHX 44703'
                     );
 
-INSERT INTO ComboioCarga (   
-                        marca,
-                        modelo
+INSERT INTO Comboio (   
+                        marcaC,
+                        modeloC
                     )
                     VALUES(
                         'GE Transportation',
                         'NAHX 38781'
                     );
 
-INSERT INTO ComboioCarga (   
-                        marca,
-                        modelo
+INSERT INTO Comboio (   
+                        marcaC,
+                        modeloC
                     )
                     VALUES(
                         'GE Transportation',
@@ -622,45 +729,45 @@ INSERT INTO ComboioCarga (
                     );
 
 --Table: ComboioPassageiros
-INSERT INTO ComboioPassageiros (   
-                        marca,
-                        modelo
+INSERT INTO Comboio (   
+                        marcaC,
+                        modeloC
                     )
                     VALUES(
                         'Stadler',
                         'Regio-Shuttle RS1'
                     );
 
-INSERT INTO ComboioPassageiros (   
-                        marca,
-                        modelo
+INSERT INTO Comboio (   
+                        marcaC,
+                        modeloC
                     )
                     VALUES(
                         'Stadler',
                         'FLIRT'
                     );
 
-INSERT INTO ComboioPassageiros (   
-                        marca,
-                        modelo
+INSERT INTO Comboio (   
+                        marcaC,
+                        modeloC
                     )
                     VALUES(
                         'Stadler',
                         'FLIRT'
                     );
 
-INSERT INTO ComboioPassageiros (   
-                        marca,
-                        modelo
+INSERT INTO Comboio (   
+                        marcaC,
+                        modeloC
                     )
                     VALUES(
                         'Stadler',
                         'SPATZ'
                     );
 
-INSERT INTO ComboioPassageiros (   
-                        marca,
-                        modelo
+INSERT INTO Comboio (   
+                        marcaC,
+                        modeloC
                     )
                     VALUES(
                         'Korail',
@@ -668,117 +775,22 @@ INSERT INTO ComboioPassageiros (
                     );
 
 
-INSERT INTO ComboioPassageiros (   
-                        marca,
-                        modelo
+INSERT INTO Comboio (   
+                        marcaC,
+                        modeloC
                     )
                     VALUES(
                         'Korail',
                         'ITX-Saemaul'
                     );
 
-INSERT INTO ComboioPassageiros (   
-                        marca,
-                        modelo
+INSERT INTO Comboio (   
+                        marcaC,
+                        modeloC
                     )
                     VALUES(
                         'DB',
                         'ICE 4'
-                    );
-
-
-
---Table: CargaCaracteristicas
-INSERT INTO CargaCaracteristicas(   
-                        marca,
-                        modelo,
-                        velMaxima,
-                        maxCarga
-                    )
-                    VALUES(
-                        'GE Transportation',
-                        'NAHX 44703',
-                        103,
-                        3.8
-                    );
-
-INSERT INTO CargaCaracteristicas(   
-                        marca,
-                        modelo,
-                        velMaxima,
-                        maxCarga
-                    )
-                    VALUES(
-                        'GE Transportation',
-                        'NAHX 38781',
-                        97,
-                        4.2
-                    );
-                
---Table: PassageirosCaracteristicas
-INSERT INTO PassageirosCaracteristicas(   
-                        marca,
-                        modelo,
-                        velMaxima,
-                        lugares
-                    )
-                    VALUES(
-                        'Stadler',
-                        'Regio-Shuttle RS1',
-                        193,
-                        120
-                    );
-
-INSERT INTO PassageirosCaracteristicas(   
-                        marca,
-                        modelo,
-                        velMaxima,
-                        lugares
-                    )
-                    VALUES(
-                        'Stadler',
-                        'FLIRT',
-                        203,
-                        115
-                    );
-
-INSERT INTO PassageirosCaracteristicas(   
-                        marca,
-                        modelo,
-                        velMaxima,
-                        lugares
-                    )
-                    VALUES(
-                        'Stadler',
-                        'Spatz',
-                        213,
-                        120
-                    );
-
-INSERT INTO PassageirosCaracteristicas(   
-                        marca,
-                        modelo,
-                        velMaxima,
-                        lugares
-                    )
-                    VALUES(
-                        'Korail',
-                        'ITX-Saemaul',
-                        290,
-                        230
-                    );
-
-INSERT INTO PassageirosCaracteristicas(   
-                        marca,
-                        modelo,
-                        velMaxima,
-                        lugares
-                    )
-                    VALUES(
-                        'DB',
-                        'ICE 4',
-                        201,
-                        110
                     );
 
 
@@ -1250,16 +1262,14 @@ INSERT INTO Informacao(
 INSERT INTO Viagem(   
                     dataDePartida,
                     dataDeChegada,
-                    idComboioCarga,
-                    idComboioPassageiros,
+                    idComboio,
                     idRota,
                     nifMaquinista
                 )
                 VALUES(
                     '2021-05-10 09:30',
                     '2021-05-10 15:21',
-                    NULL,
-                    5,
+                    10,
                     1,
                     '119608152'   
                 );
@@ -1267,16 +1277,14 @@ INSERT INTO Viagem(
 INSERT INTO Viagem(   
                     dataDePartida,
                     dataDeChegada,
-                    idComboioCarga,
-                    idComboioPassageiros,
+                    idComboio,
                     idRota,
                     nifMaquinista
                 )
                 VALUES(
                     '2021-05-10 10:30',
                     '2021-05-10 13:44',
-                    NULL,
-                    4,
+                    9,
                     2,
                     '659387578'   
                 );
@@ -1284,16 +1292,14 @@ INSERT INTO Viagem(
 INSERT INTO Viagem(   
                     dataDePartida,
                     dataDeChegada,
-                    idComboioCarga,
-                    idComboioPassageiros,
+                    idComboio,
                     idRota,
                     nifMaquinista
                 )
                 VALUES(
                     '2021-05-11 11:30',
                     '2021-05-11 14:45',
-                    NULL,
-                    6,
+                    11,
                     3,
                     '052416241'   
                 );
@@ -1301,16 +1307,14 @@ INSERT INTO Viagem(
 INSERT INTO Viagem(   
                     dataDePartida,
                     dataDeChegada,
-                    idComboioCarga,
-                    idComboioPassageiros,
+                    idComboio,
                     idRota,
                     nifMaquinista
                 )
                 VALUES(
                     '2021-05-11 17:30',
                     '2021-05-11 20:45',
-                    NULL,
-                    7,
+                    12,
                     3,
                     '659387578'     
                 );
@@ -1318,16 +1322,14 @@ INSERT INTO Viagem(
 INSERT INTO Viagem(   
                     dataDePartida,
                     dataDeChegada,
-                    idComboioCarga,
-                    idComboioPassageiros,
+                    idComboio,
                     idRota,
                     nifMaquinista
                 )
                 VALUES(
                     '2021-05-12 08:30',
                     '2021-05-12 09:30',
-                    NULL,
-                    1,
+                    6,
                     4,
                     '119608152'      
                 );
@@ -1335,16 +1337,14 @@ INSERT INTO Viagem(
 INSERT INTO Viagem(   
                     dataDePartida,
                     dataDeChegada,
-                    idComboioCarga,
-                    idComboioPassageiros,
+                    idComboio,
                     idRota,
                     nifMaquinista
                 )
                 VALUES(
                     '2021-05-12 15:30',
                     '2021-05-12 16:30',
-                    NULL,
-                    1,
+                    6,
                     5,
                     '119608152'      
                 );
@@ -1352,16 +1352,14 @@ INSERT INTO Viagem(
 INSERT INTO Viagem(   
                     dataDePartida,
                     dataDeChegada,
-                    idComboioCarga,
-                    idComboioPassageiros,
+                    idComboio,
                     idRota,
                     nifMaquinista
                 )
                 VALUES(
                     '2021-05-15 18:00',
                     '2021-05-15 21:15',
-                    NULL,
-                    4,
+                    9,
                     3,
                     '659387578'       
                 );
@@ -1369,16 +1367,14 @@ INSERT INTO Viagem(
 INSERT INTO Viagem(   
                     dataDePartida,
                     dataDeChegada,
-                    idComboioCarga,
-                    idComboioPassageiros,
+                    idComboio,
                     idRota,
                     nifMaquinista
                 )
                 VALUES(
                     '2021-06-01 10:00',
                     '2021-06-01 15:51',
-                    NULL,
-                    3,
+                    8,
                     1,
                     '052416241'        
                 );
@@ -1386,16 +1382,14 @@ INSERT INTO Viagem(
 INSERT INTO Viagem(   
                     dataDePartida,
                     dataDeChegada,
-                    idComboioCarga,
-                    idComboioPassageiros,
+                    idComboio,
                     idRota,
                     nifMaquinista
                 )
                 VALUES(
                     '2021-07-03 15:45',
                     '2021-07-03 21:36',
-                    NULL,
-                    2,
+                    7,
                     1,
                     '659387578'       
                 );
@@ -1403,16 +1397,14 @@ INSERT INTO Viagem(
 INSERT INTO Viagem(   
                     dataDePartida,
                     dataDeChegada,
-                    idComboioCarga,
-                    idComboioPassageiros,
+                    idComboio,
                     idRota,
                     nifMaquinista
                 )
                 VALUES(
                     '2021-07-18 10:00',
                     '2021-07-18 13:15',
-                    NULL,
-                    5,
+                    10,
                     3,
                     '052416241'        
                 );
@@ -1420,16 +1412,14 @@ INSERT INTO Viagem(
 INSERT INTO Viagem(   
                     dataDePartida,
                     dataDeChegada,
-                    idComboioCarga,
-                    idComboioPassageiros,
+                    idComboio,
                     idRota,
                     nifMaquinista
                 )
                 VALUES(
                     '2021-07-29 10:00',
                     '2021-07-29 11:00',
-                    NULL,
-                    7,
+                    12,
                     4,
                     '119608152'        
                 );
@@ -1437,16 +1427,14 @@ INSERT INTO Viagem(
 INSERT INTO Viagem(   
                     dataDePartida,
                     dataDeChegada,
-                    idComboioCarga,
-                    idComboioPassageiros,
+                    idComboio,
                     idRota,
                     nifMaquinista
                 )
                 VALUES(
                     '2021-07-29 19:30',
                     '2021-07-29 22:44',
-                    NULL,
-                    3,
+                    8,
                     2,
                     '052416241'        
                 );
@@ -1454,8 +1442,7 @@ INSERT INTO Viagem(
 INSERT INTO Viagem(   
                     dataDePartida,
                     dataDeChegada,
-                    idComboioCarga,
-                    idComboioPassageiros,
+                    idComboio,
                     idRota,
                     nifMaquinista
                 )
@@ -1463,7 +1450,6 @@ INSERT INTO Viagem(
                     '2021-07-31 07:52',
                     '2021-07-31 12:04',
                     2,
-                    NULL,
                     7,
                     '052416241'        
                 );
