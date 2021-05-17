@@ -3,35 +3,35 @@ PRAGMA foreign_keys = on;
 
 --Table : Servico
 INSERT INTO Servico (   
-                        nome
+                        nomeServico
                     )
                     VALUES(
                         'Alfa-Pendular'
                     );
             
 INSERT INTO Servico (   
-                        nome
+                        nomeServico
                     )
                     VALUES(
                         'Intercidades'
                     );
 
 INSERT INTO Servico (   
-                        nome
+                        nomeServico
                     )
                     VALUES(
                         'Regional'
                     );
 
 INSERT INTO Servico (   
-                        nome
+                        nomeServico
                     )
                     VALUES(
                         'Urbano'
                     );
 
 INSERT INTO Servico (   
-                        nome
+                        nomeServico
                     )
                     VALUES(
                         'Cargas'
@@ -39,7 +39,7 @@ INSERT INTO Servico (
 
 --Table : Cliente
 INSERT INTO Cliente (   
-                        nif,
+                        nifCliente,
                         nome
                     )
                     VALUES(
@@ -48,7 +48,7 @@ INSERT INTO Cliente (
                     );
 
 INSERT INTO Cliente (   
-                        nif,
+                        nifCliente,
                         nome
                     )
                     VALUES(
@@ -57,7 +57,7 @@ INSERT INTO Cliente (
                     );
 
 INSERT INTO Cliente (   
-                        nif,
+                        nifCliente,
                         nome
                     )
                     VALUES(
@@ -66,7 +66,7 @@ INSERT INTO Cliente (
                     );
 
 INSERT INTO Cliente (   
-                        nif,
+                        nifCliente,
                         nome
                     )
                     VALUES(
@@ -75,7 +75,7 @@ INSERT INTO Cliente (
                     );
 
 INSERT INTO Cliente (   
-                        nif,
+                        nifCliente,
                         nome
                     )
                     VALUES(
@@ -84,7 +84,7 @@ INSERT INTO Cliente (
                     );
 
 INSERT INTO Cliente (   
-                        nif,
+                        nifCliente,
                         nome
                     )
                     VALUES(
@@ -93,7 +93,7 @@ INSERT INTO Cliente (
                     );
 
 INSERT INTO Cliente (   
-                        nif,
+                        nifCliente,
                         nome
                     )
                     VALUES(
@@ -102,7 +102,7 @@ INSERT INTO Cliente (
                     );
 
 INSERT INTO Cliente (   
-                        nif,
+                        nifCliente,
                         nome
                     )
                     VALUES(
@@ -111,7 +111,7 @@ INSERT INTO Cliente (
                     );
 
 INSERT INTO Cliente (   
-                        nif,
+                        nifCliente,
                         nome
                     )
                     VALUES(
@@ -120,7 +120,7 @@ INSERT INTO Cliente (
                     );
 
 INSERT INTO Cliente (   
-                        nif,
+                        nifCliente,
                         nome
                     )
                     VALUES(
@@ -129,7 +129,7 @@ INSERT INTO Cliente (
                     );
 
 INSERT INTO Cliente (   
-                        nif,
+                        nifCliente,
                         nome
                     )
                     VALUES(
@@ -138,7 +138,7 @@ INSERT INTO Cliente (
                     );
 
 INSERT INTO Cliente (   
-                        nif,
+                        nifCliente,
                         nome
                     )
                     VALUES(
@@ -147,7 +147,7 @@ INSERT INTO Cliente (
                     );
 
 INSERT INTO Cliente (   
-                        nif,
+                        nifCliente,
                         nome
                     )
                     VALUES(
@@ -156,7 +156,7 @@ INSERT INTO Cliente (
                     );
 
 INSERT INTO Cliente (   
-                        nif,
+                        nifCliente,
                         nome
                     )
                     VALUES(
@@ -165,7 +165,7 @@ INSERT INTO Cliente (
                     );
 
 INSERT INTO Cliente (   
-                        nif,
+                        nifCliente,
                         nome
                     )
                     VALUES(
@@ -174,7 +174,7 @@ INSERT INTO Cliente (
                     );
 
 INSERT INTO Cliente (   
-                        nif,
+                        nifCliente,
                         nome
                     )
                     VALUES(
@@ -183,7 +183,7 @@ INSERT INTO Cliente (
                     );
 
 INSERT INTO Cliente (   
-                        nif,
+                        nifCliente,
                         nome
                     )
                     VALUES(
@@ -192,7 +192,7 @@ INSERT INTO Cliente (
                     );
 
 INSERT INTO Cliente (   
-                        nif,
+                        nifCliente,
                         nome
                     )
                     VALUES(
@@ -201,7 +201,7 @@ INSERT INTO Cliente (
                     );
 
 INSERT INTO Cliente (   
-                        nif,
+                        nifCliente,
                         nome
                     )
                     VALUES(
@@ -210,7 +210,7 @@ INSERT INTO Cliente (
                     );
 
 INSERT INTO Cliente (   
-                        nif,
+                        nifCliente,
                         nome
                     )
                     VALUES(
@@ -221,7 +221,7 @@ INSERT INTO Cliente (
 
 --Table: Estacao
 INSERT INTO Estacao (   
-                        nome,
+                        nomeEstacao,
                         morada,
                         codigoPostal,
                         localidade
@@ -234,7 +234,7 @@ INSERT INTO Estacao (
                     );
 
 INSERT INTO Estacao (   
-                        nome,
+                        nomeEstacao,
                         morada,
                         codigoPostal,
                         localidade
@@ -247,7 +247,7 @@ INSERT INTO Estacao (
                     );
 
 INSERT INTO Estacao (   
-                        nome,
+                        nomeEstacao,
                         morada,
                         codigoPostal,
                         localidade
@@ -260,7 +260,7 @@ INSERT INTO Estacao (
                     );
 
 INSERT INTO Estacao (   
-                        nome,
+                        nomeEstacao,
                         morada,
                         codigoPostal,
                         localidade
@@ -273,7 +273,7 @@ INSERT INTO Estacao (
                     );
 
 INSERT INTO Estacao (   
-                        nome,
+                        nomeEstacao,
                         morada,
                         codigoPostal,
                         localidade
@@ -286,7 +286,7 @@ INSERT INTO Estacao (
                     );
 
 INSERT INTO Estacao (   
-                        nome,
+                        nomeEstacao,
                         morada,
                         codigoPostal,
                         localidade
@@ -299,7 +299,7 @@ INSERT INTO Estacao (
                     );
 
 INSERT INTO Estacao (   
-                        nome,
+                        nomeEstacao,
                         morada,
                         codigoPostal,
                         localidade
@@ -312,7 +312,7 @@ INSERT INTO Estacao (
                     );
 
 INSERT INTO Estacao (   
-                        nome,
+                        nomeEstacao,
                         morada,
                         codigoPostal,
                         localidade
@@ -325,7 +325,7 @@ INSERT INTO Estacao (
                     );
 
 INSERT INTO Estacao (   
-                        nome,
+                        nomeEstacao,
                         morada,
                         codigoPostal,
                         localidade
@@ -338,7 +338,7 @@ INSERT INTO Estacao (
                     );
 
 INSERT INTO Estacao (   
-                        nome,
+                        nomeEstacao,
                         morada,
                         codigoPostal,
                         localidade
@@ -351,7 +351,7 @@ INSERT INTO Estacao (
                     );
 
 INSERT INTO Estacao (   
-                        nome,
+                        nomeEstacao,
                         morada,
                         codigoPostal,
                         localidade
@@ -364,7 +364,7 @@ INSERT INTO Estacao (
                     );
 
 INSERT INTO Estacao (   
-                        nome,
+                        nomeEstacao,
                         morada,
                         codigoPostal,
                         localidade
@@ -377,7 +377,7 @@ INSERT INTO Estacao (
                     );
 
 INSERT INTO Estacao (   
-                        nome,
+                        nomeEstacao,
                         morada,
                         codigoPostal,
                         localidade
@@ -390,7 +390,7 @@ INSERT INTO Estacao (
                     );
 
 INSERT INTO Estacao (   
-                        nome,
+                        nomeEstacao,
                         morada,
                         codigoPostal,
                         localidade
@@ -403,7 +403,7 @@ INSERT INTO Estacao (
                     );
 
 INSERT INTO Estacao (   
-                        nome,
+                        nomeEstacao,
                         morada,
                         codigoPostal,
                         localidade
@@ -417,7 +417,7 @@ INSERT INTO Estacao (
 
 --Table: Maquinista
 INSERT INTO Maquinista (   
-                        nif,
+                        nifMaquinista,
                         nome,
                         idade,
                         numTelefone,
@@ -432,7 +432,7 @@ INSERT INTO Maquinista (
                     );
 
 INSERT INTO Maquinista (   
-                        nif,
+                        nifMaquinista,
                         nome,
                         idade,
                         numTelefone,
@@ -447,7 +447,7 @@ INSERT INTO Maquinista (
                     );
 
 INSERT INTO Maquinista (   
-                        nif,
+                        nifMaquinista,
                         nome,
                         idade,
                         numTelefone,
@@ -464,7 +464,7 @@ INSERT INTO Maquinista (
 
 --Table: Bilheteiro
 INSERT INTO Bilheteiro (   
-                        nif,
+                        nifBilheteiro,
                         nome,
                         idade,
                         numTelefone,
@@ -481,7 +481,7 @@ INSERT INTO Bilheteiro (
                     );
 
 INSERT INTO Bilheteiro (   
-                        nif,
+                        nifBilheteiro,
                         nome,
                         idade,
                         numTelefone,
@@ -500,7 +500,7 @@ INSERT INTO Bilheteiro (
 
 --Table: Revisor
 INSERT INTO Revisor (   
-                        nif,
+                        nifRevisor,
                         nome,
                         idade,
                         numTelefone,
@@ -515,7 +515,7 @@ INSERT INTO Revisor (
                     );
 
 INSERT INTO Revisor (   
-                        nif,
+                        nifRevisor,
                         nome,
                         idade,
                         numTelefone,
@@ -530,7 +530,7 @@ INSERT INTO Revisor (
                     );
 
 INSERT INTO Revisor (   
-                        nif,
+                        nifRevisor,
                         nome,
                         idade,
                         numTelefone,
@@ -545,7 +545,7 @@ INSERT INTO Revisor (
                     );
 
 INSERT INTO Revisor (   
-                        nif,
+                        nifRevisor,
                         nome,
                         idade,
                         numTelefone,
@@ -560,7 +560,7 @@ INSERT INTO Revisor (
                     );
 
 INSERT INTO Revisor (   
-                        nif,
+                        nifRevisor,
                         nome,
                         idade,
                         numTelefone,
@@ -684,8 +684,8 @@ INSERT INTO ComboioCaracteristicas(
 
 --Table: Comboio
 INSERT INTO Comboio (   
-                        marcaC,
-                        modeloC
+                        marca,
+                        modelo
                     )
                     VALUES(
                         'GE Transportation',
@@ -693,8 +693,8 @@ INSERT INTO Comboio (
                     );
 
 INSERT INTO Comboio (   
-                        marcaC,
-                        modeloC
+                        marca,
+                        modelo
                     )
                     VALUES(
                         'GE Transportation',
@@ -702,8 +702,8 @@ INSERT INTO Comboio (
                     );
 
 INSERT INTO Comboio (   
-                        marcaC,
-                        modeloC
+                        marca,
+                        modelo
                     )
                     VALUES(
                         'GE Transportation',
@@ -711,8 +711,8 @@ INSERT INTO Comboio (
                     );
 
 INSERT INTO Comboio (   
-                        marcaC,
-                        modeloC
+                        marca,
+                        modelo
                     )
                     VALUES(
                         'GE Transportation',
@@ -720,8 +720,8 @@ INSERT INTO Comboio (
                     );
 
 INSERT INTO Comboio (   
-                        marcaC,
-                        modeloC
+                        marca,
+                        modelo
                     )
                     VALUES(
                         'GE Transportation',
@@ -730,8 +730,8 @@ INSERT INTO Comboio (
 
 --Table: ComboioPassageiros
 INSERT INTO Comboio (   
-                        marcaC,
-                        modeloC
+                        marca,
+                        modelo
                     )
                     VALUES(
                         'Stadler',
@@ -739,8 +739,8 @@ INSERT INTO Comboio (
                     );
 
 INSERT INTO Comboio (   
-                        marcaC,
-                        modeloC
+                        marca,
+                        modelo
                     )
                     VALUES(
                         'Stadler',
@@ -748,8 +748,8 @@ INSERT INTO Comboio (
                     );
 
 INSERT INTO Comboio (   
-                        marcaC,
-                        modeloC
+                        marca,
+                        modelo
                     )
                     VALUES(
                         'Stadler',
@@ -757,8 +757,8 @@ INSERT INTO Comboio (
                     );
 
 INSERT INTO Comboio (   
-                        marcaC,
-                        modeloC
+                        marca,
+                        modelo
                     )
                     VALUES(
                         'Stadler',
@@ -766,8 +766,8 @@ INSERT INTO Comboio (
                     );
 
 INSERT INTO Comboio (   
-                        marcaC,
-                        modeloC
+                        marca,
+                        modelo
                     )
                     VALUES(
                         'Korail',
@@ -776,8 +776,8 @@ INSERT INTO Comboio (
 
 
 INSERT INTO Comboio (   
-                        marcaC,
-                        modeloC
+                        marca,
+                        modelo
                     )
                     VALUES(
                         'Korail',
@@ -785,8 +785,8 @@ INSERT INTO Comboio (
                     );
 
 INSERT INTO Comboio (   
-                        marcaC,
-                        modeloC
+                        marca,
+                        modelo
                     )
                     VALUES(
                         'DB',
@@ -1734,7 +1734,7 @@ INSERT INTO BilhetePreco(
 
 -- Table : Assinatura
 INSERT INTO Assinatura(
-                    nif,
+                    nifCliente,
                     nomeServico,
                     IDPasse
                 )
@@ -1745,7 +1745,7 @@ INSERT INTO Assinatura(
                 );
 
 INSERT INTO Assinatura(
-                    nif,
+                    nifCliente,
                     nomeServico,
                     IDPasse
                 )
@@ -1756,7 +1756,7 @@ INSERT INTO Assinatura(
                 );
 
 INSERT INTO Assinatura(
-                    nif,
+                    nifCliente,
                     nomeServico,
                     IDPasse
                 )
@@ -1767,7 +1767,7 @@ INSERT INTO Assinatura(
                 );
 
 INSERT INTO Assinatura(
-                    nif,
+                    nifCliente,
                     nomeServico,
                     IDPasse
                 )
@@ -1778,7 +1778,7 @@ INSERT INTO Assinatura(
                 );
 
 INSERT INTO Assinatura(
-                    nif,
+                    nifCliente,
                     nomeServico,
                     IDPasse
                 )
@@ -1789,7 +1789,7 @@ INSERT INTO Assinatura(
                 );
 
 INSERT INTO Assinatura(
-                    nif,
+                    nifCliente,
                     nomeServico,
                     IDPasse
                 )
@@ -1800,7 +1800,7 @@ INSERT INTO Assinatura(
                 );
 
 INSERT INTO Assinatura(
-                    nif,
+                    nifCliente,
                     nomeServico,
                     IDPasse
                 )
@@ -1811,7 +1811,7 @@ INSERT INTO Assinatura(
                 );
 
 INSERT INTO Assinatura(
-                    nif,
+                    nifCliente,
                     nomeServico,
                     IDPasse
                 )
@@ -1822,7 +1822,7 @@ INSERT INTO Assinatura(
                 );
 
 INSERT INTO Assinatura(
-                    nif,
+                    nifCliente,
                     nomeServico,
                     IDPasse
                 )
@@ -1833,7 +1833,7 @@ INSERT INTO Assinatura(
                 );
 
 INSERT INTO Assinatura(
-                    nif,
+                    nifCliente,
                     nomeServico,
                     IDPasse
                 )
@@ -1844,7 +1844,7 @@ INSERT INTO Assinatura(
                 );
 
 INSERT INTO Assinatura(
-                    nif,
+                    nifCliente,
                     nomeServico,
                     IDPasse
                 )
@@ -1855,7 +1855,7 @@ INSERT INTO Assinatura(
                 );
 
 INSERT INTO Assinatura(
-                    nif,
+                    nifCliente,
                     nomeServico,
                     IDPasse
                 )
