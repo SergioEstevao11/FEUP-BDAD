@@ -1,4 +1,4 @@
-mode columns
+.mode columns
 .headers	on
 .nullvalue	NULL
 
