@@ -13,4 +13,5 @@ JOIN (
     FROM Cliente JOIN Bilhete USING(nifCliente) JOIN Viagem USING(idViagem) JOIN Rota USING(idRota) JOIN Informacao USING (idRota)
     WHERE nomeEstacaoPartida = nomeEstacao
 ) USING (nifCliente, nome) GROUP BY nifCliente
+HAVING duracaoMaxima > 60
 ORDER BY duracaoMaxima DESC;

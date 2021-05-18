@@ -10,8 +10,8 @@
 
 --select idViagem, idBilhete from Viagem left join Bilhete using(idViagem);
 
-SELECT idViagem, coalesce(ROUND(COUNT(idBilhete) *100.0/lugares, 2), 0) as 'ocupacao(%)', idRota 
+SELECT idViagem, coalesce(ROUND(COUNT(idBilhete) *100.0/lugares, 2), 0) AS 'ocupacao(%)', idRota 
 FROM (
     SELECT idViagem, lugares, idRota FROM Viagem JOIN Comboio USING(idComboio) JOIN ComboioCaracteristicas Using(marca, modelo) WHERE lugares NOT NULL
-    ) left join Bilhete USING(idViagem) GROUP BY idViagem;
+    ) LEFT JOIN Bilhete USING(idViagem) GROUP BY idViagem;
 
