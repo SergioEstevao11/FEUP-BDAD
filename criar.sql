@@ -158,7 +158,7 @@ CREATE TABLE Viagem(--ok
     idViagem                   INTEGER PRIMARY KEY AUTOINCREMENT
                                  CONSTRAINT nn_viagem_id NOT NULL,
     dataDePartida        DATE    CONSTRAINT nn_viagem_id NOT NULL,
-    dataDeChegada        DATE    CONSTRAINT nn_viagem_id NOT NULL,
+    dataDeChegada        DATE,
     idComboio            INTEGER CONSTRAINT fk_viagem_comboio REFERENCES Comboio ON DELETE SET NULL 
                                                                                  ON UPDATE CASCADE,
     idRota               INTEGER CONSTRAINT fk_viagem_rota REFERENCES Rota ON DELETE CASCADE
