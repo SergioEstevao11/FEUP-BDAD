@@ -1518,8 +1518,8 @@ INSERT INTO Bilhete(
                 )
                 VALUES(
                     '38A',
-                    '545580961',
-                    'Campanha',
+                    '201329033',
+                    'Coimbra-B',
                     'Tunes',
                     1,
                     '139514911'
@@ -1730,6 +1730,19 @@ INSERT INTO BilhetePreco(
                     'Coimbra-B',
                     6,
                     10.30
+                );
+
+INSERT INTO BilhetePreco(   
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    preco
+                )
+                VALUES(
+                    'Coimbra-B',
+                    'Tunes',
+                    1,
+                    30.0
                 );
 
 -- Table : Assinatura
