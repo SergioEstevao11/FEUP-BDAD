@@ -5,9 +5,13 @@
 
 SELECT nome
 FROM Cliente 
-WHERE nome NOT IN (
-        SELECT nome 
+WHERE nifCliente NOT IN (
+        SELECT nifCliente
         FROM Cliente JOIN Assinatura USING(nifCliente)
-    ); 
+    )
+    AND nifCliente IN (
+        SELECT nifCliente
+        FROM Cliente JOIN Bilhete USING(nifCliente) 
+    );
 
 
