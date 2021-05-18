@@ -3,8 +3,10 @@
 .nullvalue	NULL
 
 
-SELECT nome, preco
-	FROM ( 
-        SELECT nome, nifCliente, preco
-		FROM Bilhete JOIN BilhetePreco USING(idViagem) JOIN Cliente USING(nifCliente)
-    );
+
+SELECT nome AS Nome, preco_sum AS Preco
+FROM  ( 
+      SELECT nome, nifCliente, sum(preco) as preco_sum
+		  FROM Bilhete JOIN BilhetePreco USING(idViagem) JOIN Cliente USING(nifCliente) GROUP BY nifCliente
+    ) 
+    ORDER BY preco_sum DESC;
