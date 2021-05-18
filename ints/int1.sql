@@ -2,4 +2,32 @@
 .headers	on
 .nullvalue	NULL
 
+-- SELECT * FROM Estacao WHERE localidade='Lisboa';
+
+-- SELECT * FROM Estacao WHERE localidade='Porto';
+
+-- SELECT * FROM Rota WHERE EXISTS()
+
+select * from (
+        SELECT idRota 
+        FROM Estacao 
+        WHERE localidade='Lisboa') intersect (
+            SELECT idRota
+            FROM Estacao 
+            WHERE localidade='Porto');
+
+-- SELECT *
+-- FROM Viagem WHERE Viagem.idRota IN(
+--         SELECT idRota 
+--         FROM Estacao 
+--         WHERE localidade='Lisboa') AND Viagem.idRota IN (
+--             SELECT idRota
+--             FROM Estacao 
+--             WHERE localidade='Porto');
+
+-- SELECT *
+-- FROM Viagem JOIN (
+--     SELECT idRota, titulo 
+--     FROM Rota 
+--     WHERE titulo='Lisboa/Porto') USING(idRota);
 
