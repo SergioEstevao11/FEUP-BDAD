@@ -11,3 +11,7 @@ FROM   ((SELECT avg(idade) AS bilheteiro_idade_media
             INNER JOIN
         (SELECT avg(idade) AS revisor_idade_media 
         FROM Revisor));
+
+
+
+

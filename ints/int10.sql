@@ -2,8 +2,9 @@
 .headers	on
 .nullvalue	NULL
 
+--COMPLETA
 
-SELECT nome
+SELECT nome AS Nome
 FROM Cliente 
 WHERE nifCliente NOT IN (
         SELECT nifCliente
@@ -11,7 +12,8 @@ WHERE nifCliente NOT IN (
     )
     AND nifCliente IN (
         SELECT nifCliente
-        FROM Cliente JOIN Bilhete USING(nifCliente) 
+        FROM Cliente JOIN Bilhete USING(nifCliente) JOIN Bilheteiro USING(nifBilheteiro)
+        WHERE idade > 30
     );
 
 

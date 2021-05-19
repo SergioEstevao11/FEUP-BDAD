@@ -2,6 +2,8 @@
 .headers	on
 .nullvalue	NULL
 
+-- COMPLETO
+
 SELECT nome, max(chegada - partida) AS duracaoMaxima
 FROM (
     SELECT nome,nifCliente, tempoDeChegada AS chegada

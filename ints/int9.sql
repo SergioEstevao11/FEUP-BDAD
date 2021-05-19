@@ -2,10 +2,12 @@
 .headers	on
 .nullvalue	NULL
 
-SELECT DISTINCT idComboio
+--COMPLETA
+
+SELECT DISTINCT idComboio, marca, modelo, lugares
 FROM Viagem JOIN Rota USING(idRota) JOIN Informacao USING(idRota) JOIN (
-    SELECT idComboio
-    FROM ComboioCaracteristicas NATURAL JOIN Comboio
-    WHERE  marca = 'Stadler' AND lugares > 115
+    SELECT idComboio,marca, modelo, lugares
+    FROM ComboioCaracteristicas JOIN Comboio USING(marca, modelo)
+    WHERE  marca = 'Stadler' AND lugares > 100
     ) USING (idComboio)
-    WHERE nomeEstacao = 'Coimbra-B';
+WHERE nomeEstacao = 'Coimbra-B';

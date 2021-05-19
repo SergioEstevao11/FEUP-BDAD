@@ -491,7 +491,7 @@ INSERT INTO Bilheteiro (
                     VALUES(
                         '956978340',
                         'Madalena de Mello Sottomayor',
-                        45,
+                        25,
                         '223772211',
                         '890984567000',
                         'Oriente'
@@ -649,7 +649,7 @@ INSERT INTO ComboioCaracteristicas(
                         'SPATZ',
                         213,
                         null,
-                        120
+                        90
                     );
 
 INSERT INTO ComboioCaracteristicas(   
@@ -679,7 +679,7 @@ INSERT INTO ComboioCaracteristicas(
                         'ICE 4',
                         201,
                         null,
-                        110
+                        95
                     );
 
 --Table: Comboio
@@ -1471,6 +1471,23 @@ INSERT INTO Bilhete(
                     'Tunes',
                     1,
                     '139514911'
+                );
+
+INSERT INTO Bilhete(   
+                    lugarDestinado, 
+                    nifCliente,
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    nifBilheteiro
+                )
+                VALUES(
+                    '32B',
+                    '131199282',
+                    'Oriente',
+                    'Campanha',
+                    2,
+                    '956978340'
                 );
 
 INSERT INTO Bilhete(   
