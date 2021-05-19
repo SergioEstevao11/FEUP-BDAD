@@ -4,7 +4,7 @@
 
 --Numero de Serviços de cada Estação 
 
-SELECT nomeEstacao, COUNT(nomeServico) as numeroServicos
+SELECT nomeEstacao, COUNT(nomeServico) AS numeroServicos
 FROM (
     SELECT  nomeEstacao, idRota, nomeServico
     FROM (

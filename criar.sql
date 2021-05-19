@@ -18,10 +18,7 @@ DROP TABLE IF EXISTS Revisor;
 DROP TABLE IF EXISTS Bilheteiro;
 DROP TABLE IF EXISTS Comboio;
 DROP TABLE IF EXISTS ComboioCaracteristicas;
---DROP TABLE IF EXISTS ComboioCarga;
---DROP TABLE IF EXISTS ComboioPassageiros;
--- DROP TABLE IF EXISTS PassageirosCaracteristicas;
--- DROP TABLE IF EXISTS CargaCaracteristicas;
+
 
 CREATE TABLE Cliente(
     nifCliente  TEXT   PRIMARY KEY    

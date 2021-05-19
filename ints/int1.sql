@@ -8,13 +8,13 @@
 
 -- SELECT * FROM Rota WHERE EXISTS()
 
-select * from (
-        SELECT idRota 
-        FROM Estacao 
-        WHERE localidade='Lisboa') intersect (
-            SELECT idRota
-            FROM Estacao 
-            WHERE localidade='Porto');
+-- select * from (
+--         SELECT idRota 
+--         FROM Estacao 
+--         WHERE localidade='Lisboa') intersect (
+--             SELECT idRota
+--             FROM Estacao 
+--             WHERE localidade='Porto');
 
 -- SELECT *
 -- FROM Viagem WHERE Viagem.idRota IN(
