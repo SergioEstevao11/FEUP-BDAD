@@ -10,5 +10,5 @@ FROM (
     FROM (
         SELECT nomeEstacao, idRota
         FROM Estacao JOIN Informacao USING (nomeEstacao)) JOIN Rota USING (idRota)
-    ) GROUP BY nomeEstacao
+    ) GROUP BY nomeEstacao  
 HAVING numeroServicos > 3;

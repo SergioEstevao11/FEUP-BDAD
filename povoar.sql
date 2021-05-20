@@ -240,19 +240,6 @@ INSERT INTO Estacao (
                         localidade
                     )
                     VALUES(
-                        'Sao Bento',
-                        'Praca Almeida Garrett',
-                        '4000-069',
-                        'Porto'
-                    );
-
-INSERT INTO Estacao (   
-                        nomeEstacao,
-                        morada,
-                        codigoPostal,
-                        localidade
-                    )
-                    VALUES(
                         'Santa Apolonia',
                         'Av. Infante D. Henrique',
                         '1149-066',
@@ -1454,8 +1441,77 @@ INSERT INTO Viagem(
                     '052416241'        
                 );
 
+INSERT INTO Viagem(   
+                    dataDePartida,
+                    dataDeChegada,
+                    idComboio,
+                    idRota,
+                    nifMaquinista
+                )
+                VALUES(
+                    '2021-09-23 09:30',
+                    '2021-09-23 10:40',
+                    12,
+                    6,
+                    '119608152'       
+                );
+
 
 --Table: Bilhete
+--not sure
+INSERT INTO Bilhete(   
+                    lugarDestinado,
+                    nifCliente,
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    nifBilheteiro
+                )
+                VALUES(
+                    '08C',
+                    '131199282',
+                    'Campanha',
+                    'Oriente',
+                    4,
+                    '139514911'
+                );
+
+INSERT INTO Bilhete(   
+                    lugarDestinado,
+                    nifCliente,
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    nifBilheteiro
+                )
+                VALUES(
+                    '23D',
+                    '131199282',
+                    'Aveiro',
+                    'Coimbra',
+                    5,
+                    '139514911'
+                );
+
+INSERT INTO Bilhete(   
+                    lugarDestinado,
+                    nifCliente,
+                    nomeEstacaoPartida,
+                    nomeEstacaoChegada,
+                    idViagem,
+                    nifBilheteiro
+                )
+                VALUES(
+                    '02A',
+                    '131199282',
+                    'Coimbra',
+                    'Figueira da Foz',
+                    14,
+                    '956978340'
+                );
+
+--NO SURE
+
 INSERT INTO Bilhete(   
                     lugarDestinado,
                     nifCliente,
@@ -1468,7 +1524,7 @@ INSERT INTO Bilhete(
                     '43A',
                     '131199282',
                     'Campanha',
-                    'Tunes',
+                    'Faro',
                     1,
                     '139514911'
                 );

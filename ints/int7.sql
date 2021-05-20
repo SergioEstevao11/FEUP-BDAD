@@ -12,4 +12,4 @@ FROM Cliente JOIN (
                  JOIN Rota USING(idRota) 
                  JOIN Servico USING(nomeServico) GROUP BY nifCliente
     ) USING (nifCliente)
-    WHERE numServico > 1;
+WHERE numServico > 1;
