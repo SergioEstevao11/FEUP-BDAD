@@ -2,7 +2,7 @@
 .headers	on
 .nullvalue	NULL
 
---COMPLETO
+--COMPLETA
 
 SELECT idRota, titulo, ROUND(avg(ocupacaoViagem), 3) AS 'OcupacaoMediaRota(%)'
 FROM Rota NATURAL JOIN (
@@ -14,5 +14,5 @@ FROM Rota NATURAL JOIN (
         ) LEFT JOIN Bilhete USING(idViagem) 
         GROUP BY idViagem
     ) 
-    GROUP BY idRota;
+GROUP BY idRota;
 

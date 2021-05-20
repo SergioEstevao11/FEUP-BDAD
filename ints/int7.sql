@@ -2,7 +2,9 @@
 .headers	on
 .nullvalue	NULL
 
-SELECT nome
+--COMPLETA
+
+SELECT nome, numServico
 FROM Cliente JOIN (
     SELECT nifCliente, count(nomeServico) as numServico
     FROM Bilhete JOIN Cliente USING (nifCliente) 

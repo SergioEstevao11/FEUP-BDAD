@@ -2,7 +2,7 @@
 .headers	on
 .nullvalue	NULL
 
---COMPLETED
+--COMPLETA
 
 SELECT nome, preco_sum as PrecoTotal, nifCliente
 FROM  ( 

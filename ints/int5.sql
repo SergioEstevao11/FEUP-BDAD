@@ -2,8 +2,13 @@
 .headers	on
 .nullvalue	NULL
 
-SELECT nomeEstacao, COUNT(idViagem) AS visits 
+--COMPLETA
+
+SELECT nomeEstacao, COUNT(idBilhete) AS visits
 FROM(
-    SELECT nomeEstacao, idViagem 
-    FROM Estacao JOIN Informacao USING(nomeEstacao) JOIN Viagem USING(idRota)
-    ) GROUP BY(nomeEstacao) ORDER BY visits DESC LIMIT 3;
+    SELECT *
+    FROM Estacao JOIN Informacao USING(nomeEstacao) JOIN Viagem USING(idRota) JOIN Bilhete USING(idViagem) 
+    WHERE strftime('%Y-%m-%d', dataDePartida) = '2021-05-10' OR strftime('%Y-%m-%d', dataDeChegada) = '2021-05-10'
+    ) GROUP BY(nomeEstacao)
+ORDER BY visits DESC LIMIT 5;
+ 

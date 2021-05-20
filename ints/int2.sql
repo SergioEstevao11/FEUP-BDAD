@@ -2,8 +2,17 @@
 .headers	on
 .nullvalue	NULL
 
-SELECT nomeEstacao, sum(preco) AS total
-FROM Bilhete NATURAL JOIN BilhetePreco 
-                     JOIN Bilheteiro USING(nifBilheteiro) 
-                     JOIN Estacao USING(nomeEstacao) GROUP BY nomeEstacao;
+--COMPLETA
 
+SELECT nome, max(chegada - partida) AS duracaoMaxima
+FROM (
+    SELECT nome,nifCliente, tempoDeChegada AS chegada
+    FROM Cliente JOIN Bilhete USING(nifCliente) JOIN Viagem USING(idViagem) JOIN Rota USING(idRota) JOIN Informacao USING (idRota)
+    WHERE nomeEstacaoChegada = nomeEstacao
+)
+JOIN (
+    SELECT nome,nifCliente, tempoDeChegada AS partida
+    FROM Cliente JOIN Bilhete USING(nifCliente) JOIN Viagem USING(idViagem) JOIN Rota USING(idRota) JOIN Informacao USING (idRota)
+    WHERE nomeEstacaoPartida = nomeEstacao
+) USING (nifCliente, nome) GROUP BY nifCliente
+ORDER BY duracaoMaxima DESC;
