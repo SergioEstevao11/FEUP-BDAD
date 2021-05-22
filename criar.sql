@@ -60,7 +60,7 @@ CREATE TABLE Estacao(
     CONSTRAINT uq_estacao_morada_codigoPostal UNIQUE(morada, codigoPostal)
 );
 
-CREATE TABLE Rota( --Didn't decide yet
+CREATE TABLE Rota(
     idRota          INTEGER PRIMARY KEY AUTOINCREMENT
                         CONSTRAINT nn_rota_id NOT NULL,
     titulo      TEXT,
@@ -69,7 +69,7 @@ CREATE TABLE Rota( --Didn't decide yet
                         CONSTRAINT nn_rota_nomeServico NOT NULL
 );
 
-CREATE TABLE Informacao( --ok
+CREATE TABLE Informacao( 
     nomeEstacao    TEXT    CONSTRAINT fk_informacao_estacao REFERENCES Estacao ON DELETE CASCADE 
                                                                                ON UPDATE CASCADE
                            CONSTRAINT nn_informacao_nomeEstacao NOT NULL,
@@ -95,7 +95,7 @@ CREATE TABLE Maquinista(
                         CONSTRAINT nn_maquinista_numLicensa NOT NULL
 );
 
-CREATE TABLE Bilheteiro(-- ok
+CREATE TABLE Bilheteiro(
     nifBilheteiro         TEXT    PRIMARY KEY 
                         CONSTRAINT ck_bilheteiro_nif CHECK(LENGTH(nifBilheteiro) == 9 AND nifBilheteiro NOT GLOB '*[^0-9]*')
                         CONSTRAINT nn_bilheteiro_nif NOT NULL,
@@ -150,7 +150,7 @@ CREATE TABLE ComboioCaracteristicas(
 );
 
 
-CREATE TABLE Viagem(--ok
+CREATE TABLE Viagem(
     idViagem                   INTEGER PRIMARY KEY AUTOINCREMENT
                                  CONSTRAINT nn_viagem_id NOT NULL,
     dataDePartida        DATE    CONSTRAINT nn_viagem_id NOT NULL,
@@ -166,7 +166,7 @@ CREATE TABLE Viagem(--ok
     CONSTRAINT uq_viagem_dataDePartida_idRota UNIQUE(dataDePartida,idRota)
 );
 
-CREATE TABLE RevisorViagem(--ok
+CREATE TABLE RevisorViagem(
     nifRevisor TEXT    CONSTRAINT fk_revisorViagem_revisor REFERENCES Revisor ON DELETE CASCADE 
                                                                               ON UPDATE CASCADE
                        CONSTRAINT nn_revisorViagem_nifRevisor NOT NULL,
@@ -176,7 +176,7 @@ CREATE TABLE RevisorViagem(--ok
     PRIMARY KEY(nifRevisor, idViagem)
 );
 
-CREATE TABLE Bilhete(--ok
+CREATE TABLE Bilhete(
     idBilhete                 INTEGER PRIMARY KEY AUTOINCREMENT
                                CONSTRAINT nn_bilhete_id NOT NULL,
     lugarDestinado     TEXT,

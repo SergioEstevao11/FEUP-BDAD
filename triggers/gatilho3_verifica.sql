@@ -4,6 +4,10 @@
 
 PRAGMA foreign_keys = ON;
 
+.print ''
+.print 'Adicionada uma nova Viagem com idViagem = 301, idComboio = 2 (Comboio de carga) e idRota = 1 (Passageiros)'
+.print ''
+
 INSERT INTO Viagem(   
                     idViagem,
                     dataDePartida,
@@ -19,10 +23,17 @@ INSERT INTO Viagem(
                     '052416241'        
                 );
 
+.print ''
+.print 'Comboio associado à viagem com idViagem = 301'
+.print ''
+
 select idComboio
 FROM Viagem
 WHERE idViagem = 301;
 
+.print ''
+.print 'Adicionada uma nova Viagem com idViagem = 302, idComboio = 2 (Comboio de carga) e idRota = 7 (Cargas)'
+.print ''
 
 INSERT INTO Viagem(   
                     idViagem,
@@ -39,9 +50,17 @@ INSERT INTO Viagem(
                     '659387578'        
                 );
 
+.print ''
+.print 'Comboio associado à viagem com idViagem = 302'
+.print ''
+
 select idComboio
 FROM Viagem
 WHERE idViagem = 302;
+
+.print ''
+.print 'Adicionada uma nova Viagem com idViagem = 303, idComboio = 10 (Comboio de passageiros) e idRota = 1 (Passageiros)'
+.print ''
 
 INSERT INTO Viagem(   
                     idViagem,
@@ -58,9 +77,17 @@ INSERT INTO Viagem(
                     '052416241'        
                 );
 
+.print ''
+.print 'Comboio associado à viagem com idViagem = 303'
+.print ''
+
 select idComboio
 FROM Viagem
 WHERE idViagem = 303;
+
+.print ''
+.print 'Adicionada uma nova Viagem com idViagem = 304, idComboio = 10 (Comboio de passageiros) e idRota = 7 (Cargas)'
+.print ''
 
 INSERT INTO Viagem(   
                     idViagem,
@@ -76,6 +103,10 @@ INSERT INTO Viagem(
                     7,
                     '659387578'        
                 );
+
+.print ''
+.print 'Comboio associado à viagem com idViagem = 304'
+.print ''
 
 select idComboio
 FROM Viagem

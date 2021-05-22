@@ -5,6 +5,7 @@
 PRAGMA foreign_keys = ON;
 
 CREATE TRIGGER IF NOT EXISTS calcularDataDeChegada
+
 AFTER INSERT ON Viagem
 FOR EACH ROW
 BEGIN 

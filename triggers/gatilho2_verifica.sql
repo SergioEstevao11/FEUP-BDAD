@@ -4,6 +4,9 @@
 
 PRAGMA foreign_keys = ON;
 
+.print ''
+.print 'Adicionada uma nova Viagem, sem dataDeChegada pois ainda não foi calculada'
+.print ''
 
 INSERT INTO Viagem(   
                     idViagem,
@@ -21,6 +24,9 @@ INSERT INTO Viagem(
                 );
 
 
+.print ''
+.print 'Data de chegada devidamente calculada:'
+.print ''
 
 select dataDeChegada
 from Viagem

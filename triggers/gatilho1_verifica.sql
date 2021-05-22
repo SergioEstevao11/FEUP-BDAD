@@ -4,6 +4,11 @@
 
 PRAGMA foreign_keys = ON;
 
+
+.print ''
+.print 'Inserido comboio com um lugar disponível de marca e modelo Dummy'
+.print ''
+
 INSERT INTO ComboioCaracteristicas(   
                         marca,
                         modelo,
@@ -19,6 +24,10 @@ INSERT INTO ComboioCaracteristicas(
                         1
                     );
 
+.print ''
+.print 'Inserido comboio com id = 300 de marca e modelo Dummy'
+.print ''
+
 INSERT INTO Comboio (   
                         idComboio,
                         marca,
@@ -29,6 +38,10 @@ INSERT INTO Comboio (
                         'Dummy',
                         'Dummy'
                     );
+
+.print ''
+.print 'Inserida viagem com id = 200 e associada ao comboio de id = 300 na rota de id = 1'
+.print ''
 
 INSERT INTO Viagem(   
                     idViagem,
@@ -44,6 +57,11 @@ INSERT INTO Viagem(
                     1,
                     '119608152'   
                 );
+
+
+.print ''
+.print 'Inserido bilhete com um idViagem correspondente a uma viagem de Carga'
+.print ''
 
 INSERT INTO Bilhete(
                     idBilhete,  
@@ -62,6 +80,12 @@ INSERT INTO Bilhete(
                     13
                 );
 
+
+.print ''
+.print 'Inserido bilhete cuja estação Coimbra-A não está presente na rota de id = 1'
+.print ''
+
+
 INSERT INTO Bilhete(
                     idBilhete,  
                     lugarDestinado,
@@ -79,6 +103,10 @@ INSERT INTO Bilhete(
                     200
                 );
 
+.print ''
+.print 'Inserido bilhete cujas estações de partida e chegada não estão pela ordem correta'
+.print ''
+
 INSERT INTO Bilhete(
                     idBilhete,  
                     lugarDestinado,
@@ -96,6 +124,10 @@ INSERT INTO Bilhete(
                     200
                 );
 
+.print ''
+.print 'Inserido bilhete que respeita todos os triggers'
+.print ''
+
 INSERT INTO Bilhete(
                     idBilhete,  
                     lugarDestinado,
@@ -112,10 +144,18 @@ INSERT INTO Bilhete(
                     'Oriente',
                     200
                 );
+
+.print ''
+.print 'Bilhetes devidamente atualizados:'
+.print ''
 
 SELECT * 
 FROM Bilhete 
 WHERE idBilhete = 300;
+
+.print ''
+.print 'Segundo bilhete inserido na viagem de id = 200 que está associada a um comboio com apenas 1 lugar'
+.print ''
 
 INSERT INTO Bilhete(
                     idBilhete,  
