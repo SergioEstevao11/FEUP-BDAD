@@ -2,8 +2,6 @@
 .headers	on
 .nullvalue	NULL
 
---COMPLETA
-
 SELECT idRota, titulo, ROUND(avg(ocupacaoViagem), 3) AS 'OcupacaoMediaRota(%)'
 FROM Rota NATURAL JOIN (
     SELECT idViagem, COUNT(idBilhete) *100.0/lugares AS 'ocupacaoViagem', idRota 

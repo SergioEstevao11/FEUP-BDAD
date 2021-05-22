@@ -2,8 +2,6 @@
 .headers	on
 .nullvalue	NULL
 
---COMPLETO
-
 SELECT idViagem, dataDePartida, dataDeChegada
 FROM(
     SELECT idRota, tempoDeChegada AS TPorto

@@ -2,8 +2,6 @@
 .headers	on
 .nullvalue	NULL
 
---COMPLETA
-
 SELECT DISTINCT idComboio, marca, modelo, lugares
 FROM Viagem JOIN Rota USING(idRota) JOIN Informacao USING(idRota) JOIN (
     SELECT idComboio,marca, modelo, lugares

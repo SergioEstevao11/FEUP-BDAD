@@ -2,8 +2,6 @@
 .headers	on
 .nullvalue	NULL
 
---COMPLETA
-
 SELECT nomeEstacao, COUNT(nomeServico) AS numeroServicos
 FROM (
     SELECT  nomeEstacao, nomeServico

@@ -2,8 +2,6 @@
 .headers	on
 .nullvalue	NULL
 
---COMPLETA
-
 SELECT nome, preco_sum as PrecoTotal, nifCliente
 FROM  ( 
       SELECT nome, nifCliente, sum(preco) as preco_sum

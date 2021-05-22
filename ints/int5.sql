@@ -2,8 +2,6 @@
 .headers	on
 .nullvalue	NULL
 
---COMPLETA
-
 SELECT nomeEstacao, COUNT(idBilhete) AS visits
 FROM(
     SELECT *

@@ -2,8 +2,6 @@
 .headers	on
 .nullvalue	NULL
 
---COMPLETA
-
 SELECT * 
 FROM(
     SELECT nifCliente, nome, COUNT(DISTINCT nomeEstacao) AS NumEstacao 

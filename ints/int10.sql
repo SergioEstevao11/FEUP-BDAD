@@ -2,8 +2,6 @@
 .headers	on
 .nullvalue	NULL
 
---COMPLETA
-
 SELECT nome AS Nome
 FROM Cliente 
 WHERE nifCliente NOT IN (

@@ -9,7 +9,7 @@ AFTER INSERT ON Viagem
 FOR EACH ROW
 WHEN (
     (SELECT nomeServico
-    FROM Servico JOIN Rota USING (nomeServico)
+    FROM Rota
     WHERE idRota = new.idRota) != 'Cargas' AND (
         SELECT lugares
         FROM Comboio NATURAL JOIN ComboioCaracteristicas
@@ -27,7 +27,7 @@ AFTER INSERT ON Viagem
 FOR EACH ROW
 WHEN (
     (SELECT nomeServico
-    FROM Servico JOIN Rota USING (nomeServico)
+    FROM Rota
     WHERE idRota = new.idRota) = 'Cargas' AND (
         SELECT maxCarga
         FROM Comboio NATURAL JOIN ComboioCaracteristicas
