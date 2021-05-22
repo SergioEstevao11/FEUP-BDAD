@@ -3,3 +3,6 @@
 .nullvalue NULL
 
 PRAGMA foreign_keys = ON;
+
+DROP TRIGGER IF EXISTS atribuirComboiodePassageiros;
+DROP TRIGGER IF EXISTS atribuirComboiodeCarga;

@@ -110,7 +110,6 @@ CREATE TABLE Bilheteiro(-- ok
 
     nomeEstacao TEXT    CONSTRAINT fk_bilheteiro_estacao REFERENCES Estacao ON DELETE SET NULL 
                                                                             ON UPDATE CASCADE
-                        CONSTRAINT nn_bilheteiro_nomeEstacao NOT NULL
 );
 
 CREATE TABLE Revisor(
