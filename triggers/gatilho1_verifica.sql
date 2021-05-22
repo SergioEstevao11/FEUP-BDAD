@@ -40,7 +40,7 @@ INSERT INTO Comboio (
                     );
 
 .print ''
-.print 'Inserida viagem com id = 200 e associada ao comboio de id = 300 na rota de id = 1'
+.print 'Inserida viagem com id = 200 e associada ao comboio de id = 300 na rota de id = 1 (Passageiros)'
 .print ''
 
 INSERT INTO Viagem(   
@@ -125,7 +125,7 @@ INSERT INTO Bilhete(
                 );
 
 .print ''
-.print 'Inserido bilhete que respeita todos os triggers'
+.print 'Inserido bilhete que respeita todos os triggers com idBilhete = 300 e idViagem = 200'
 .print ''
 
 INSERT INTO Bilhete(
