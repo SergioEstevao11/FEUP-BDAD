@@ -31,3 +31,19 @@ INSERT INTO Viagem(
 select dataDeChegada
 from Viagem
 where idViagem = 300;
+
+.print ''
+.print 'Updated Viagem com id = 300 para ter dataDePartida = '2021-08-02 17:30' '
+.print ''
+
+UPDATE Viagem
+SET dataDePartida = '2021-08-02 17:30'
+WHERE idViagem  = 300;
+
+.print ''
+.print 'Data de chegada devidamente calculada:'
+.print ''
+
+select dataDeChegada
+from Viagem
+where idViagem = 300;

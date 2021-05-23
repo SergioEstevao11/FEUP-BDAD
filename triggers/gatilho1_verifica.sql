@@ -60,7 +60,7 @@ INSERT INTO Viagem(
 
 
 .print ''
-.print 'Inserido bilhete com um idViagem correspondente a uma viagem de Carga'
+.print 'Inserido bilhete com um idViagem ( = 13 ) correspondente a uma viagem de Carga'
 .print ''
 
 INSERT INTO Bilhete(
@@ -144,6 +144,22 @@ INSERT INTO Bilhete(
                     'Oriente',
                     200
                 );
+
+.print ''
+.print 'Bilhetes devidamente atualizados:'
+.print ''
+
+SELECT * 
+FROM Bilhete 
+WHERE idBilhete = 300;
+
+.print ''
+.print 'Updated bilhete com id = 300 para uma viagem de carga com id = 13'
+.print ''
+
+UPDATE Bilhete 
+SET idViagem = 13
+WHERE idBilhete  = 300;
 
 .print ''
 .print 'Bilhetes devidamente atualizados:'

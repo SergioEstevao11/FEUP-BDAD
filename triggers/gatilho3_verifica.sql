@@ -111,3 +111,21 @@ INSERT INTO Viagem(
 select idComboio
 FROM Viagem
 WHERE idViagem = 304;
+
+
+.print ''
+.print 'Updated Viagem com id = 303 para ter idComboio igual a um comboio de carga ( idComboio = 2 ) '
+.print ''
+
+UPDATE Viagem
+SET idComboio = 2
+WHERE idViagem  = 303;
+
+
+.print ''
+.print 'Comboio associado à viagem com idViagem = 303'
+.print ''
+
+select idComboio
+FROM Viagem
+WHERE idViagem = 303;
