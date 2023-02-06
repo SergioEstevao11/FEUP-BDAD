@@ -5,13 +5,13 @@
 
 ## Project Overview
 
-The schema includes trains, different routes, stations, intervinients with the trains (different workers and clients), tickets, and all the scheduled stops of the trains in each station.
-Furthermore, the project also includes triggers that garantee the database integraty when a element is dropped.
+The schema includes trains, different routes, stations, intervenients with the trains (different workers and clients), tickets, and all the scheduled stops of the trains in each station.
+Furthermore, the project also includes triggers that guarantee the database integrity when an element is dropped.
 
 
 ## Usage
 
-In database management system, for example sqlite, run the ``` criar.sql ``` script, followed by ``` povoar.sql```.
+In a database management system, for example, sqlite, run the ``` criar.sql ``` script, followed by ``` povoar.sql```.
 
 ## UML
 
