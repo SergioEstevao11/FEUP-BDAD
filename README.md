@@ -1,5 +1,5 @@
 # FEUP-BDAD
-**Description** - Database for a railway system, with the respective schema and population scripts
+**Description** - Database for a railway system, with the respective schema and populate scripts
 
 **Course** - Databases
 
